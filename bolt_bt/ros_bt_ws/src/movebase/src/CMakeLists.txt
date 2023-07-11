@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(move_base)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(behaviortree_cpp)
+
+add_executable(${PROJECT_NAME} "move_base.cpp")
+target_link_libraries(${PROJECT_NAME} BT::behaviortree_cpp)

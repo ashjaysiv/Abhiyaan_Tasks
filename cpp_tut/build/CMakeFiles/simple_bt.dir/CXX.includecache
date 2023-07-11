@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ashmitha/behavior_trees/cpp_tut/simple_bt.cpp
+iostream
+-
+chrono
+-
+behaviortree_cpp/action_node.h
+/home/ashmitha/behavior_trees/cpp_tut/behaviortree_cpp/action_node.h
+behaviortree_cpp/bt_factory.h
+/home/ashmitha/behavior_trees/cpp_tut/behaviortree_cpp/bt_factory.h
+

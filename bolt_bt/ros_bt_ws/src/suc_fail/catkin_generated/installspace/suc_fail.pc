@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: suc_fail
+Description: Description of suc_fail
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
