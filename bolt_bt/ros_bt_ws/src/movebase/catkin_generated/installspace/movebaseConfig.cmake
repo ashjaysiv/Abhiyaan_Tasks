@@ -68,13 +68,13 @@ set(movebase_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(movebase_SOURCE_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/movebase)
-  set(movebase_DEVEL_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/devel)
+  set(movebase_DEVEL_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel)
   set(movebase_INSTALL_PREFIX "")
   set(movebase_PREFIX ${movebase_DEVEL_PREFIX})
 else()
   set(movebase_SOURCE_PREFIX "")
   set(movebase_DEVEL_PREFIX "")
-  set(movebase_INSTALL_PREFIX /usr/local)
+  set(movebase_INSTALL_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/install)
   set(movebase_PREFIX ${movebase_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/install/lib;/home/ashmitha/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -2,7 +2,7 @@
      <BehaviorTree ID="MainTree">
         <Sequence name="root_sequence">
             <CheckMoveBase name="move_base"/>
-            <!-- <Teleop name="teleop"/> -->
+            <SwitchTeleop name="switch_teleop"/>
         </Sequence>
      </BehaviorTree>
  </root>

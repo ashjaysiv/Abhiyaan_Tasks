@@ -7,3 +7,5 @@
 subdirs("gtest")
 subdirs("suc_fail")
 subdirs("movebase")
+subdirs("vikram_sim")
+subdirs("vikram_nav")

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../devel/lib/movebase/movebase"
-  "../devel/lib/movebase/movebase.pdb"
+  "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib/movebase/movebase"
+  "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib/movebase/movebase.pdb"
   "CMakeFiles/movebase.dir/src/move_base.cpp.o"
 )
 

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "suc_fail"
-PROJECT_SPACE_DIR = "/usr/local"
+PROJECT_SPACE_DIR = "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/install"
 PROJECT_VERSION = "0.0.0"

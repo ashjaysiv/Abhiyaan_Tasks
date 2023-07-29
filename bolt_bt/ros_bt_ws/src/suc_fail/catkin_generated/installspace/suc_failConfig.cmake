@@ -68,13 +68,13 @@ set(suc_fail_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(suc_fail_SOURCE_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/suc_fail)
-  set(suc_fail_DEVEL_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/devel)
+  set(suc_fail_DEVEL_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel)
   set(suc_fail_INSTALL_PREFIX "")
   set(suc_fail_PREFIX ${suc_fail_DEVEL_PREFIX})
 else()
   set(suc_fail_SOURCE_PREFIX "")
   set(suc_fail_DEVEL_PREFIX "")
-  set(suc_fail_INSTALL_PREFIX /usr/local)
+  set(suc_fail_INSTALL_PREFIX /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/install)
   set(suc_fail_PREFIX ${suc_fail_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/install/lib;/home/ashmitha/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

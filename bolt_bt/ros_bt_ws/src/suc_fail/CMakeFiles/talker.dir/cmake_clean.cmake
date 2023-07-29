@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../devel/lib/suc_fail/talker"
-  "../devel/lib/suc_fail/talker.pdb"
+  "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib/suc_fail/talker"
+  "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib/suc_fail/talker.pdb"
   "CMakeFiles/talker.dir/src/move_base.cpp.o"
 )
 
