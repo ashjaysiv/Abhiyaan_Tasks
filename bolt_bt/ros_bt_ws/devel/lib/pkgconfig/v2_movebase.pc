@@ -1,0 +1,8 @@
+prefix=/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel
+
+Name: v2_movebase
+Description: Description of v2_movebase
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

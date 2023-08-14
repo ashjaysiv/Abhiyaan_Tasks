@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib/suc_fail/talker"
   "/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/devel/lib/suc_fail/talker.pdb"
   "CMakeFiles/talker.dir/src/move_base.cpp.o"
+  "CMakeFiles/talker.dir/src/move_base.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,0 +1,32 @@
+<root BTCPP_format="4" >
+     <BehaviorTree ID="MainTree">
+        <!-- <Repeat name="check_goal" num_cycles= "5"> -->
+        <Sequence>
+            <ReceiveGoal name="receive_goal" goal_status = "goal_received"/>
+            <Script code="switch:=0" />
+
+            <Sequence>
+                <Fallback>
+                    <Parallel name="CheckParallel">
+                        <ReachGoal name="reach_goal" goal_reach_status = "goal_reached"/>
+                        <EmergencyStop name="emergency_stop" exit_status = "stop"/>
+                        
+                        <Inverter>
+                            <MoveBase name="move_base" move_status = "moving" _onSuccess="switch:=0" _onFailure="switch:=1"/>
+                        </Inverter>
+
+                    </Parallel>
+                </Fallback>
+
+
+                <Precondition if="switch==1" else="SUCCESS">
+                        <SwitchTeleop name="switch_teleop"/>
+                </Precondition>
+            </Sequence>
+        </Sequence>
+
+        
+        
+     
+     </BehaviorTree>
+ </root>
