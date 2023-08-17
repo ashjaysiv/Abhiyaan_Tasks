@@ -1,5 +1,7 @@
 # Behavior Tree
 
+LOCATION OF BT PACKAGE: Abhiyaan_Tasks/bolt_bt/ros_bt_ws/src/movebase
+
 - This behaviour tree consists of the following nodes:
 1. ReceiveGoal: Checks if goal is received
 2. ReachGoal: Checks if the goal has been reached
