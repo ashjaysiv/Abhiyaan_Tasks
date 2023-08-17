@@ -136,8 +136,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/gtest/cmake_install.cmake")
-  include("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/suc_fail/cmake_install.cmake")
-  include("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/v2_movebase/cmake_install.cmake")
   include("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/movebase/cmake_install.cmake")
   include("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/vikram_sim/cmake_install.cmake")
   include("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/vikram_nav/cmake_install.cmake")

@@ -1,0 +1,36 @@
+<root BTCPP_format="4" >
+     <BehaviorTree ID="MainTree">
+        <Sequence>
+            <RetryUntilSuccessful num_attempts="-1">
+                <ReceiveGoal name="receive_goal" />
+            </RetryUntilSuccessful>
+
+            <Script code="switch:=0" />
+            <Script code="reach:=0" />
+            <Script code="stop:=0" />
+            <Script code="tick_count:=0" />
+
+
+            <RetryUntilSuccessful num_attempts="-1">
+                <ReactiveFallback>
+                    <EmergencyStop name="emergency_stop"  _onSuccess="stop:=1" _onFailure="stop:=0"/>
+                    <ReachGoal name="reach_goal"  _onSuccess="reach:=1" _onFailure="reach:=0"/>
+                    
+                    <Precondition if="reach!=1 && stop!=1" else="FAILURE">
+                            <MoveBase name="move_base" _onSuccess="switch:=1" _onFailure="switch:=0"/>
+                    </Precondition>
+                    
+                </ReactiveFallback>
+            </RetryUntilSuccessful>
+            
+            <Precondition if="switch==1" else="SUCCESS">
+                    <SwitchTeleop name="switch_teleop"/>
+            </Precondition>
+
+        </Sequence>
+
+        
+        
+     
+     </BehaviorTree>
+ </root>

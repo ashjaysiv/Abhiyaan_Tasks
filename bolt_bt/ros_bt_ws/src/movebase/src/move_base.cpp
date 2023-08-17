@@ -2,6 +2,8 @@
 #include <chrono>
 #include "behaviortree_cpp/action_node.h"
 #include "behaviortree_cpp/bt_factory.h"
+
+
 #include <string>
 #include <move_base_msgs/MoveBaseActionFeedback.h>
 #include <move_base_msgs/MoveBaseActionGoal.h>
@@ -26,12 +28,11 @@ class ReceiveGoal : public BT::StatefulActionNode
 
             static BT::PortsList providedPorts()
             {
-                return {BT::InputPort<std::string>("goal_status")};
+                return {};
             }
 
             static void Callback(const actionlib_msgs::GoalStatusArray::ConstPtr& msg)
             {
-                std::cout<<"receive goal Callback Called"<<std::endl;
                 status = msg->status_list[0].text;
             }
  
@@ -54,37 +55,30 @@ class ReceiveGoal : public BT::StatefulActionNode
 
     BT::NodeStatus ReceiveGoal::onStart()
     {
-        std::cout<<"Subscribing to topic for Receive Goal"<<std::endl;
         sub = n.subscribe<actionlib_msgs::GoalStatusArray>("/move_base/status", 1000, &ReceiveGoal::Callback);
-        
         return BT::NodeStatus::RUNNING;
-        
     }
 
     BT::NodeStatus ReceiveGoal::onRunning()
     {
-        
         ros::spinOnce();
 
         if (status == "This goal has been accepted by the simple action server")
         {
             sub.shutdown();
-            std::cout << "GOAL SET" << std::endl;
+            ROS_INFO("GOAL RECEIVED");
             return BT::NodeStatus::SUCCESS;
         }
         else
         {
-            return BT::NodeStatus::RUNNING;
+            return BT::NodeStatus::FAILURE;
         }  
 
         
     }
 
 
-    void ReceiveGoal::onHalted()
-    {
-        std::cout<<"ABORTED"<<std::endl;
-    }
+    void ReceiveGoal::onHalted() {}
 
 // ----------------------- Check if goal reached
 
@@ -96,12 +90,11 @@ class ReachGoal : public BT::StatefulActionNode
 
             static BT::PortsList providedPorts()
             {
-                return {BT::InputPort<std::string>("goal_reach_status")};
+                return {};
             }
 
             static void Callback(const actionlib_msgs::GoalStatusArray::ConstPtr& msg)
             {
-                std::cout<<"Reach Goal callback"<<std::endl;
 
                 status = msg->status_list[0].text;
             }
@@ -125,7 +118,6 @@ class ReachGoal : public BT::StatefulActionNode
 
     BT::NodeStatus ReachGoal::onStart()
     {
-        std::cout<<"Subscribing to topic for Reach Goal"<<std::endl;
         sub = n.subscribe<actionlib_msgs::GoalStatusArray>("/move_base/status", 1000, &ReachGoal::Callback);
         
         return BT::NodeStatus::RUNNING;
@@ -136,10 +128,9 @@ class ReachGoal : public BT::StatefulActionNode
     {
         
         ros::spinOnce();
-
         if (status == "Goal reached.")
         {
-            std::cout << "Goal reached" << std::endl;
+            ROS_INFO("GOAL REACHED");
             return BT::NodeStatus::SUCCESS;
         }
         else
@@ -147,14 +138,10 @@ class ReachGoal : public BT::StatefulActionNode
             return BT::NodeStatus::FAILURE;
         }  
 
-        
     }
 
 
-    void ReachGoal::onHalted()
-    {
-        std::cout<<"ABORTED"<<std::endl;
-    }
+    void ReachGoal::onHalted(){}
 
 
 //----------------------Move base
@@ -164,24 +151,22 @@ struct Pose2D
     double x, y;
 };
 
+
 class MoveBase : public BT::StatefulActionNode
     {
         public:
-            MoveBase(const std::string& name, const BT::NodeConfig& config) : StatefulActionNode(name, config)
+            MoveBase(const std::string& name, const BT::NodeConfig& config, int tick_count, Pose2D prev_pose) : StatefulActionNode(name, config), tick_count_(tick_count), prev_pose_(prev_pose)
             {}
 
             static BT::PortsList providedPorts()
             {
-                return {BT::InputPort<std::string>("move_status")};
+                return {};
             }
 
             static void Callback(const move_base_msgs::MoveBaseActionFeedback::ConstPtr& msg)
             {
-                std::cout << "movebase callback " << std::endl;
-                
                 curr_pose.x = msg->feedback.base_position.pose.position.x;
                 curr_pose.y = msg->feedback.base_position.pose.position.y;
-                
             }
  
             BT::NodeStatus onStart() override;
@@ -193,7 +178,9 @@ class MoveBase : public BT::StatefulActionNode
         private:
             static Pose2D curr_pose;
             ros::Subscriber sub;
-            ros::NodeHandle n;           
+            ros::NodeHandle n;    
+            Pose2D prev_pose_;
+            int32_t tick_count_;  
 
     };
 
@@ -201,45 +188,63 @@ class MoveBase : public BT::StatefulActionNode
 
     BT::NodeStatus MoveBase::onStart()
     {
-        std::cout<<"Subscribing to topic"<<std::endl;
-
-        ros::NodeHandle n;
-        ros::Subscriber sub = n.subscribe("/move_base/feedback", 1000, &MoveBase::Callback);
-        
+        sub = n.subscribe<move_base_msgs::MoveBaseActionFeedback>("/move_base/feedback", 1000, &MoveBase::Callback);
         return BT::NodeStatus::RUNNING;
         
     }
 
     BT::NodeStatus MoveBase::onRunning()
-    {
-        std::cout<<"Move Base"<<std::endl;
+    {        
 
-        long double distance;
-        Pose2D prev_pose;
-        
-        prev_pose = curr_pose;
+        tick_count_++;
 
-        // std::this_thread::sleep_for(std::chrono::seconds(10));
-        ros::Duration(20.0).sleep();
-        ros::spinOnce();
-
-
-        if (distance < 0.0012)
+        // check if time has passed
+        if (tick_count_ >= 600)
         {
-            std::cout<<"Bot is stuck"<<std::endl;
-            // returning success so that the next node teleop is activated
-            return BT::NodeStatus::SUCCESS;
+
+            // spin to get the current pose
+            double duration = 0.1;  
+            double start_time = ros::Time::now().toSec();
+
+            while (ros::ok())
+            {
+                if (ros::Time::now().toSec() - start_time >= duration)
+                {
+                    break;
+                }
+                ros::spinOnce();
+            }
+
+            long double distance;
+            distance = std::sqrt((prev_pose_.x - curr_pose.x)*(prev_pose_.x - curr_pose.x) + (prev_pose_.y - curr_pose.y)*(prev_pose_.y - curr_pose.y));
+
+            prev_pose_ = curr_pose;
+
+            //  restart tick count and set the value3
+            tick_count_ = 0;
+
+            // check if bot is stuck
+            if (distance < 1.5)
+            {
+                ROS_INFO("BOT STUCK");
+                return BT::NodeStatus::SUCCESS;
+            }
+            else
+            {
+                return BT::NodeStatus::FAILURE;
+            }
+
         }
+
         else
         {
             return BT::NodeStatus::FAILURE;
         }
+        
+        
     }
 
-    void MoveBase::onHalted()
-    {
-        std::cout<<"ABORTED"<<std::endl;
-    }
+    void MoveBase::onHalted() {}
 
 //-----------------------------Switch Teleop
 class SwitchTeleop
@@ -249,26 +254,37 @@ class SwitchTeleop
 
     BT::NodeStatus switched()
     {
-        
-        ros::NodeHandle n;
-        ros::Publisher pub = n.advertise<actionlib_msgs::GoalID> ("/move_base/cancel", 1000);
-        actionlib_msgs::GoalID msg;
-        msg.id = "";
-        
-        ros::spinOnce();
+        //stop movebase
+        ros::NodeHandle nh;
 
-        //cancels movebase
-        pub.publish(msg);
+        ros::Publisher cancel_pub = nh.advertise<actionlib_msgs::GoalID>("/move_base/cancel", 10);
+        ros::Rate loop_rate(10); 
 
-        std::cout<<"Move Base Cancelled"<<std::endl;
-
+        actionlib_msgs::GoalID cancel_msg;
         
+        cancel_msg.id = "";
+
+        double duration = 1.0;  
+        double start_time = ros::Time::now().toSec();
+
+        while (ros::ok())
+        {
+            if (ros::Time::now().toSec() - start_time >= duration)
+            {
+                break;
+            }
+
+            cancel_pub.publish(cancel_msg);
+            ros::spinOnce();
+            loop_rate.sleep();
+        }
+
         //launches teleop
         std::string launch_file_path = "vikram.launch";
         std::string command = "roslaunch vikram_sim " + launch_file_path;
         int result_1 = system(command.c_str());
 
-        std::cout<<"Switched to teleop"<<std::endl;
+        ROS_INFO("TELEOP LAUNCHED");
         return BT::NodeStatus::SUCCESS;
     };
 
@@ -284,17 +300,14 @@ class EmergencyStop : public BT::StatefulActionNode
 
             static BT::PortsList providedPorts()
             {
-                return {BT::InputPort<std::string>("exit_status")};
+                return {};
             }
 
             static void Callback(const std_msgs::String::ConstPtr& msg)
             {
-                std::cout<<msg->data<<std::endl;
-                std::cout << "estop callback" << std::endl;
                 
                 if (msg->data == "stop")
                 {
-                    
                     stop = true;
                 }
             }
@@ -318,11 +331,11 @@ class EmergencyStop : public BT::StatefulActionNode
     BT::NodeStatus EmergencyStop::onStart()
     {
 
+
         sub = n.subscribe("/stop", 1000, &EmergencyStop::Callback);
         ros::spinOnce();
         if (stop)
         {
-            std::cout<<"time to stop"<<std::endl;
             return BT::NodeStatus::RUNNING;
         }
         else
@@ -334,28 +347,38 @@ class EmergencyStop : public BT::StatefulActionNode
 
     BT::NodeStatus EmergencyStop::onRunning()
     {
-        std::cout<<"Emergency stop"<<std::endl;
+        ROS_INFO("EMERGENCY STOP!");
 
-        ros::NodeHandle n;
-        ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/cmd_vel", 1000);
+        ros::NodeHandle nh;
 
-        geometry_msgs::Twist msg;
+        ros::Publisher cancel_pub = nh.advertise<actionlib_msgs::GoalID>("/move_base/cancel", 10);
+        ros::Rate loop_rate(10); 
 
-        msg.linear.x = msg.linear.y = msg.linear.z = 0.0;
-        msg.angular.x = msg.angular.y = msg.angular.z = 0.0;
+        actionlib_msgs::GoalID cancel_msg;
+        
+        cancel_msg.id = "";
 
-        ros::spinOnce();
-        pub.publish(msg);
+        double duration = 1.0;  
+        double start_time = ros::Time::now().toSec();
 
-        std::cout<<"Bot has been stopped"<<std::endl;
-        return BT::NodeStatus::FAILURE;
+        while (ros::ok())
+        {
+            if (ros::Time::now().toSec() - start_time >= duration)
+            {
+                break;
+            }
 
+            cancel_pub.publish(cancel_msg);
+            ros::spinOnce();
+            loop_rate.sleep();
+        }
+
+        return BT::NodeStatus::SUCCESS;
     }
 
-    void EmergencyStop::onHalted()
-    {
-        std::cout<<"ABORTED"<<std::endl;
-    }
+    void EmergencyStop::onHalted() {}
+
+// -----------------Main
 
 int main(int argc, char **argv)
 {
@@ -365,206 +388,20 @@ int main(int argc, char **argv)
 
     SwitchTeleop tele_obj;
 
-
+    Pose2D init_;
+    init_.x = 0.0;
+    init_.y = 0.0;
 
     factory.registerNodeType<ReceiveGoal>("ReceiveGoal");
     factory.registerNodeType<ReachGoal>("ReachGoal");
 
-    factory.registerNodeType<MoveBase>("MoveBase");
+    factory.registerNodeType<MoveBase>("MoveBase", 0, init_);
     factory.registerSimpleAction("SwitchTeleop", std::bind(&SwitchTeleop::switched, &tele_obj));
     factory.registerNodeType<EmergencyStop>("EmergencyStop");
 
-    
 
-    auto tree = factory.createTreeFromFile("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/v2_movebase/src/tree.xml");
+    auto tree = factory.createTreeFromFile("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/movebase/src/tree.xml");
 
-    // ros::AsyncSpinner spinner(1);
-    // spinner.start();
-
-    // BT::NodeStatus status = tree.rootNode()->executeTick();
     tree.tickWhileRunning();
-
-    // spinner.stop();
-
-
 }
-
-
-
-// #include <iostream>
-// #include <chrono>
-// #include "behaviortree_cpp/action_node.h"
-// #include "behaviortree_cpp/bt_factory.h"
-// #include <string>
-// #include <move_base_msgs/MoveBaseActionFeedback.h>
-// #include <thread>
-// #include <cmath>
-// #include <geometry_msgs/Twist.h>
-
-// #include "/opt/ros/noetic/include/ros/ros.h"
-// #include "/opt/ros/noetic/include/std_msgs/String.h"
-
-// using namespace std::chrono_literals;
-
-// //------------------ MOVEBASE -------------------------//
-
-// class CheckMoveBase
-// {
-//     public:
-//         // current pose
-//         static long double pose_x_curr;
-//         static long double pose_x_prev;
-
-//         // pose 5 seconds ago (to check if the bot is stuck)
-//         static long double pose_y_curr;
-//         static long double pose_y_prev;
-//     CheckMoveBase() {}
-
-//     BT::NodeStatus check()
-//     {
-//         ros::NodeHandle n;
-//         ros::Subscriber sub = n.subscribe("/move_base/feedback", 1000, &CheckMoveBase::Callback);
-//         long double distance;
-
-//         while(ros::ok())
-//         {
-//             pose_x_prev = pose_x_curr;
-//             pose_y_prev = pose_y_curr;
-
-//             //wait 5 seconds before checking the next pose
-//             std::this_thread::sleep_for(std::chrono::seconds(5));
-//             ros::spinOnce();
-            
-//             //calculate the distance between the robaot's current pose and the pose 5 seconds ago
-//             distance = std::sqrt((pose_x_prev - pose_x_curr)*(pose_x_prev - pose_x_curr) + (pose_y_prev - pose_y_curr)*(pose_y_prev - pose_y_curr));
-
-//             if (distance < 0.0012)
-//             {
-//                 std::cout<<"Bot is stuck"<<std::endl;
-//                 // returning success so that the next node teleop is activated
-//                 return BT::NodeStatus::SUCCESS;
-//             }
-//         }
-        
-    
-//     };
-
-//     static void Callback(const move_base_msgs::MoveBaseActionFeedback::ConstPtr& msg)
-//     {
-        
-//         pose_x_curr = msg->feedback.base_position.pose.position.x;
-//         pose_y_curr = msg->feedback.base_position.pose.position.y;
-        
-//     }
-
-// };
-
-// long double CheckMoveBase::pose_x_curr;
-// long double CheckMoveBase::pose_x_prev;
-
-// long double CheckMoveBase::pose_y_curr;
-// long double CheckMoveBase::pose_y_prev;
-
-
-// //-----------------------TELEOP-------------------------------------//
-// class SwitchTeleop
-// {
-//     public:
-//     SwitchTeleop() {}
-
-//     BT::NodeStatus switched()
-//     {
-        
-//         ros::NodeHandle n;
-//         ros::Publisher pub = n.advertise<actionlib_msgs::GoalID> ("/move_base/cancel", 1000);
-//         actionlib_msgs::GoalID msg;
-//         msg.id = "";
-//         ros::spinOnce();
-
-//         //cancels movebase
-//         pub.publish(msg);
-
-//         std::cout<<"Move Base Cancelled"<<std::endl;
-
-        
-//         //launches teleop
-//         std::string launch_file_path = "vikram.launch";
-//         std::string command = "roslaunch vikram_sim " + launch_file_path;
-//         int result_1 = system(command.c_str());
-
-//         std::cout<<"Switched to teleop"<<std::endl;
-//         return BT::NodeStatus::SUCCESS;
-//     };
-
-// };
-
-// //---------------------CHECKEMERGENCYSTOP--------------------------//
-
-// BT::NodeStatus CheckEmergencyStop()
-// {
-//     int key;
-//     std::cin>>key;
-//     if (key == 1)
-//     {
-
-//         std::cout<<"Key to stop entered"<<std::endl;
-//         return BT::NodeStatus::SUCCESS;
-
-//     };
-     
-// };
-
-// // --------------------STOP-----------------------//
-
-// class Stop
-// {
-//     public:
-//     Stop() {}
-
-//     BT::NodeStatus stop()
-//     {
-//         ros::NodeHandle n;
-//         ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/move_base/cancel", 1000);
-
-//         geometry_msgs::Twist msg;
-
-//         msg.linear.x = msg.linear.y = msg.linear.z = 0.0;
-//         msg.angular.x = msg.angular.y = msg.angular.z = 0.0;
-
-//         ros::spinOnce();
-//         pub.publish(msg);
-
-//         std::cout<<"Bot has been stopped"<<std::endl;
-//         return BT::NodeStatus::SUCCESS;
-        
-//     };
-
-// };
-
-// // ------------------------- MAIN ----------------------- //
-
-// int main(int argc, char **argv)
-// {
-//     CheckMoveBase obj_1;
-//     SwitchTeleop obj_2;
-//     Stop obj_3;
-//     ros::init(argc, argv, "listener");
-    
-
-//     BT::BehaviorTreeFactory factory;
-
-//     factory.registerSimpleCondition("CheckMoveBase", std::bind(&CheckMoveBase::check, &obj_1));
-
-//     factory.registerSimpleAction("SwitchTeleop", std::bind(&SwitchTeleop::switched, &obj_2));
-
-//     factory.registerSimpleCondition("CheckEmergencyStop", std::bind(CheckEmergencyStop));
-
-//     factory.registerSimpleAction("Stop", std::bind(&Stop::stop, &obj_3));
-
-
-//     auto tree = factory.createTreeFromFile("/home/ashmitha/behavior_trees/bolt_bt/ros_bt_ws/src/movebase/src/move_base.xml");
-    
-//     tree.tickWhileRunning();
-//     return 0;
-// }
 

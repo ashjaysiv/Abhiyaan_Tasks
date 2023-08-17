@@ -5,8 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("suc_fail")
-subdirs("v2_movebase")
 subdirs("movebase")
 subdirs("vikram_sim")
 subdirs("vikram_nav")
