@@ -204,3 +204,30 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+find_package(PCL 1.8 REQUIRED)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  pcl_ros
+  pcl_conversions
+  cv_bridge
+  sensor_msgs
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${PCL_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+)
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+
+add_executable(depth_pub scripts/depth_to_pcl.cpp)
+target_link_libraries(depth_pub ${catkin_LIBRARIES})
+target_link_libraries(depth_pub ${PCL_LIBRARIES})
+
