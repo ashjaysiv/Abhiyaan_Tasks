@@ -231,3 +231,8 @@ add_executable(depth_pub scripts/depth_to_pcl.cpp)
 target_link_libraries(depth_pub ${catkin_LIBRARIES})
 target_link_libraries(depth_pub ${PCL_LIBRARIES})
 
+
+add_executable(pseudo_barrel scripts/pseudo_barrel_pcl.cpp)
+target_link_libraries(pseudo_barrel ${catkin_LIBRARIES})
+target_link_libraries(pseudo_barrel ${PCL_LIBRARIES})
+

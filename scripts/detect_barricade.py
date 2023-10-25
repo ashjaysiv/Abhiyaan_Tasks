@@ -49,9 +49,10 @@ class Barricades:
                 confidence = pred.boxes.conf
                 
                 x_min, y_min, x_max, y_max = box[0], box[1], box[2], box[3]
-
                 for conf in confidence:
-                    if conf > 0.6:
+                    rospy.loginfo(conf)
+
+                    if conf > 0.3:
                         message.data = True
 
                         cv2.rectangle(image, (int(x_min), int(y_min)), (int(x_max), int(y_max)), (0, 255, 0), 2)
