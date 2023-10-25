@@ -1,4 +1,5 @@
 <launch>
+    <!-- for fun -->
     <node name = 'barricade_image_input' pkg = "bolt" type = "detect_barricade.py" output="screen"/>
     <node name = "barrel_to_cloud" pkg = "bolt" type = "pseudo_barrel" output="screen"/>
 </launch>
