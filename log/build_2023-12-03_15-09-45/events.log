@@ -1,0 +1,625 @@
+[0.000000] (-) TimerEvent: {}
+[0.008290] (behavior_trees) JobQueued: {'identifier': 'behavior_trees', 'dependencies': OrderedDict()}
+[0.008434] (msgs) JobQueued: {'identifier': 'msgs', 'dependencies': OrderedDict()}
+[0.008462] (nav2_test_utils) JobQueued: {'identifier': 'nav2_test_utils', 'dependencies': OrderedDict()}
+[0.008484] (behaviors) JobQueued: {'identifier': 'behaviors', 'dependencies': OrderedDict([('msgs', '/home/ashmitha/ros_ws/install/msgs')])}
+[0.008511] (msgs) JobStarted: {'identifier': 'msgs'}
+[0.068746] (behavior_trees) JobStarted: {'identifier': 'behavior_trees'}
+[0.099973] (-) TimerEvent: {}
+[0.118277] (nav2_test_utils) JobStarted: {'identifier': 'nav2_test_utils'}
+[0.183707] (msgs) JobProgress: {'identifier': 'msgs', 'progress': 'cmake'}
+[0.184586] (msgs) JobProgress: {'identifier': 'msgs', 'progress': 'build'}
+[0.185433] (msgs) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--build', '/home/ashmitha/ros_ws/build/msgs', '--', '-j8', '-l8'], 'cwd': '/home/ashmitha/ros_ws/build/msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.194915] (behavior_trees) JobProgress: {'identifier': 'behavior_trees', 'progress': 'cmake'}
+[0.195167] (behavior_trees) JobProgress: {'identifier': 'behavior_trees', 'progress': 'build'}
+[0.195220] (behavior_trees) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--build', '/home/ashmitha/ros_ws/build/behavior_trees', '--', '-j8', '-l8'], 'cwd': '/home/ashmitha/ros_ws/build/behavior_trees', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/behavior_trees'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.204866] (nav2_test_utils) JobProgress: {'identifier': 'nav2_test_utils', 'progress': 'cmake'}
+[0.204967] (-) TimerEvent: {}
+[0.205716] (nav2_test_utils) JobProgress: {'identifier': 'nav2_test_utils', 'progress': 'build'}
+[0.206482] (nav2_test_utils) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--build', '/home/ashmitha/ros_ws/build/nav2_test_utils', '--', '-j8', '-l8'], 'cwd': '/home/ashmitha/ros_ws/build/nav2_test_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/nav2_test_utils'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.254684] (msgs) StdoutLine: {'line': b'[  3%] Built target msgs__cpp\n'}
+[0.257978] (behavior_trees) CommandEnded: {'returncode': 0}
+[0.261417] (msgs) StdoutLine: {'line': b'[ 12%] Built target msgs__rosidl_generator_c\n'}
+[0.274834] (msgs) StdoutLine: {'line': b'[ 22%] Built target msgs__rosidl_typesupport_cpp\n'}
+[0.278682] (msgs) StdoutLine: {'line': b'[ 32%] Built target msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.284203] (msgs) StdoutLine: {'line': b'[ 41%] Built target msgs__rosidl_typesupport_c\n'}
+[0.286979] (msgs) StdoutLine: {'line': b'[ 51%] Built target msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.288274] (msgs) StdoutLine: {'line': b'[ 61%] Built target msgs__rosidl_typesupport_introspection_c\n'}
+[0.289566] (nav2_test_utils) StdoutLine: {'line': b'[ 50%] Built target nav2_client_util\n'}
+[0.295820] (nav2_test_utils) StdoutLine: {'line': b'[100%] Built target clicked_point_to_pose\n'}
+[0.304133] (msgs) StdoutLine: {'line': b'[ 70%] Built target msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.305074] (-) TimerEvent: {}
+[0.307258] (nav2_test_utils) CommandEnded: {'returncode': 0}
+[0.314257] (msgs) StdoutLine: {'line': b'[ 70%] Built target msgs\n'}
+[0.323716] (behavior_trees) JobProgress: {'identifier': 'behavior_trees', 'progress': 'install'}
+[0.326274] (msgs) StdoutLine: {'line': b'[ 74%] Built target msgs__py\n'}
+[0.356925] (msgs) StdoutLine: {'line': b'[ 80%] Built target msgs__python\n'}
+[0.376201] (behavior_trees) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--install', '/home/ashmitha/ros_ws/build/behavior_trees'], 'cwd': '/home/ashmitha/ros_ws/build/behavior_trees', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/behavior_trees'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.382992] (msgs) StdoutLine: {'line': b'[ 87%] Built target msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.384817] (msgs) StdoutLine: {'line': b'[ 93%] Built target msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.385232] (msgs) StdoutLine: {'line': b'[100%] Built target msgs__rosidl_typesupport_c__pyext\n'}
+[0.394453] (nav2_test_utils) JobProgress: {'identifier': 'nav2_test_utils', 'progress': 'install'}
+[0.394757] (nav2_test_utils) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--install', '/home/ashmitha/ros_ws/build/nav2_test_utils'], 'cwd': '/home/ashmitha/ros_ws/build/nav2_test_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/nav2_test_utils'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.399022] (msgs) CommandEnded: {'returncode': 0}
+[0.405582] (-) TimerEvent: {}
+[0.424333] (behavior_trees) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.424672] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/ament_index/resource_index/package_run_dependencies/behavior_trees\n'}
+[0.425152] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/ament_index/resource_index/parent_prefix_path/behavior_trees\n'}
+[0.425354] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/environment/ament_prefix_path.sh\n'}
+[0.425638] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/environment/ament_prefix_path.dsv\n'}
+[0.426368] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/environment/path.sh\n'}
+[0.426679] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/environment/path.dsv\n'}
+[0.426858] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/local_setup.bash\n'}
+[0.426955] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/local_setup.sh\n'}
+[0.427039] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/local_setup.zsh\n'}
+[0.427121] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/local_setup.dsv\n'}
+[0.427263] (behavior_trees) StdoutLine: {'line': b'-- Installing: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.dsv\n'}
+[0.427513] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/ament_index/resource_index/packages/behavior_trees\n'}
+[0.431474] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/cmake/behavior_treesConfig.cmake\n'}
+[0.431598] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/cmake/behavior_treesConfig-version.cmake\n'}
+[0.431686] (behavior_trees) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.xml\n'}
+[0.435759] (nav2_test_utils) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.436599] (behavior_trees) CommandEnded: {'returncode': 0}
+[0.437036] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/nav2_client_util\n'}
+[0.437489] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/clicked_point_to_pose\n'}
+[0.437860] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/package_run_dependencies/nav2_test_utils\n'}
+[0.437961] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/parent_prefix_path/nav2_test_utils\n'}
+[0.438045] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/ament_prefix_path.sh\n'}
+[0.438125] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/ament_prefix_path.dsv\n'}
+[0.438206] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/path.sh\n'}
+[0.438438] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/path.dsv\n'}
+[0.438529] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.bash\n'}
+[0.438621] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.sh\n'}
+[0.438710] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.zsh\n'}
+[0.438812] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.dsv\n'}
+[0.438925] (nav2_test_utils) StdoutLine: {'line': b'-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.dsv\n'}
+[0.439122] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/packages/nav2_test_utils\n'}
+[0.439259] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/cmake/nav2_test_utilsConfig.cmake\n'}
+[0.439356] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/cmake/nav2_test_utilsConfig-version.cmake\n'}
+[0.439451] (nav2_test_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.xml\n'}
+[0.506059] (nav2_test_utils) CommandEnded: {'returncode': 0}
+[0.507319] (-) TimerEvent: {}
+[0.585235] (msgs) JobProgress: {'identifier': 'msgs', 'progress': 'install'}
+[0.586023] (msgs) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--install', '/home/ashmitha/ros_ws/build/msgs'], 'cwd': '/home/ashmitha/ros_ws/build/msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.607494] (-) TimerEvent: {}
+[0.620881] (msgs) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.621324] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/ament_index/resource_index/rosidl_interfaces/msgs\n'}
+[0.621566] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs\n'}
+[0.621645] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg\n'}
+[0.621715] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.621779] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action\n'}
+[0.621838] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/teleop.h\n'}
+[0.621950] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail\n'}
+[0.622421] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__functions.c\n'}
+[0.622932] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__type_support.h\n'}
+[0.623096] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__functions.h\n'}
+[0.623197] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__struct.h\n'}
+[0.623286] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/library_path.sh\n'}
+[0.623373] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/library_path.dsv\n'}
+[0.623457] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_generator_c.so\n'}
+[0.623712] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs\n'}
+[0.623782] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg\n'}
+[0.623860] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.623945] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action\n'}
+[0.624015] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail\n'}
+[0.624099] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__rosidl_typesupport_fastrtps_c.h\n'}
+[0.624186] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.624272] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs\n'}
+[0.624358] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg\n'}
+[0.624433] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.624508] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action\n'}
+[0.624572] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail\n'}
+[0.624645] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/dds_fastrtps\n'}
+[0.624703] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.624770] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.624971] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs\n'}
+[0.625080] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg\n'}
+[0.625167] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.625261] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action\n'}
+[0.625320] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail\n'}
+[0.625381] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__type_support.c\n'}
+[0.625441] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__rosidl_typesupport_introspection_c.h\n'}
+[0.625501] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_typesupport_introspection_c.so\n'}
+[0.625559] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_typesupport_c.so\n'}
+[0.625621] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs\n'}
+[0.625691] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg\n'}
+[0.625746] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.625804] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action\n'}
+[0.625864] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/teleop.hpp\n'}
+[0.625924] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail\n'}
+[0.626012] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__struct.hpp\n'}
+[0.626246] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__type_support.hpp\n'}
+[0.626341] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__traits.hpp\n'}
+[0.626430] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__builder.hpp\n'}
+[0.626515] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs\n'}
+[0.626605] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action\n'}
+[0.626679] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail\n'}
+[0.626772] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__type_support.cpp\n'}
+[0.626869] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/include/msgs/action/detail/teleop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.626959] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.627051] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__rosidl_typesupport_cpp.so\n'}
+[0.627141] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/pythonpath.sh\n'}
+[0.627236] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/pythonpath.dsv\n'}
+[0.627340] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/__init__.py\n'}
+[0.663926] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/action\n'}
+[0.664285] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/action/__init__.py\n'}
+[0.664586] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/action/_teleop.py\n'}
+[0.664757] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/action/_teleop_s.c\n'}
+[0.664880] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/msgs_s__rosidl_typesupport_fastrtps_c.cpython-311-x86_64-linux-gnu.so\n'}
+[0.664974] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/msgs_s__rosidl_typesupport_introspection_c.cpython-311-x86_64-linux-gnu.so\n'}
+[0.665063] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages/msgs/msgs_s__rosidl_typesupport_c.cpython-311-x86_64-linux-gnu.so\n'}
+[0.665384] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/lib/libmsgs__python.so\n'}
+[0.665708] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/action/Teleop.idl\n'}
+[0.665961] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/action/Teleop.action\n'}
+[0.666083] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/ament_index/resource_index/package_run_dependencies/msgs\n'}
+[0.666196] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/ament_index/resource_index/parent_prefix_path/msgs\n'}
+[0.666283] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/ament_prefix_path.sh\n'}
+[0.666366] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/ament_prefix_path.dsv\n'}
+[0.666450] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/path.sh\n'}
+[0.666534] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/environment/path.dsv\n'}
+[0.666616] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/local_setup.bash\n'}
+[0.666697] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/local_setup.sh\n'}
+[0.666779] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/local_setup.zsh\n'}
+[0.666927] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/local_setup.dsv\n'}
+[0.667013] (msgs) StdoutLine: {'line': b'-- Installing: /home/ashmitha/ros_ws/install/msgs/share/msgs/package.dsv\n'}
+[0.667133] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/ament_index/resource_index/packages/msgs\n'}
+[0.667217] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_generator_cExport.cmake\n'}
+[0.667299] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_generator_cExport-release.cmake\n'}
+[0.667483] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.667594] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[0.667678] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.667760] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_cExport-release.cmake\n'}
+[0.667839] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_generator_cppExport.cmake\n'}
+[0.667921] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.668004] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[0.668094] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.668179] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgs__rosidl_typesupport_cppExport-release.cmake\n'}
+[0.668264] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.668348] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.668437] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.668521] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.668606] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.668888] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.669082] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.669178] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgsConfig.cmake\n'}
+[0.669265] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/cmake/msgsConfig-version.cmake\n'}
+[0.669351] (msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ashmitha/ros_ws/install/msgs/share/msgs/package.xml\n'}
+[0.687625] (behavior_trees) JobEnded: {'identifier': 'behavior_trees', 'rc': 0}
+[0.708040] (-) TimerEvent: {}
+[0.761877] (nav2_test_utils) JobEnded: {'identifier': 'nav2_test_utils', 'rc': 0}
+[0.763152] (msgs) CommandEnded: {'returncode': 0}
+[0.808205] (-) TimerEvent: {}
+[0.909034] (-) TimerEvent: {}
+[1.004424] (msgs) JobEnded: {'identifier': 'msgs', 'rc': 0}
+[1.005675] (behaviors) JobStarted: {'identifier': 'behaviors'}
+[1.009068] (-) TimerEvent: {}
+[1.061401] (behaviors) JobProgress: {'identifier': 'behaviors', 'progress': 'cmake'}
+[1.062108] (behaviors) JobProgress: {'identifier': 'behaviors', 'progress': 'build'}
+[1.062412] (behaviors) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--build', '/home/ashmitha/ros_ws/build/behaviors', '--', '-j8', '-l8'], 'cwd': '/home/ashmitha/ros_ws/build/behaviors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1692'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ashmitha/ros_ws/install/msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '10d67a371e4654b9170151965897906700000016120016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1612,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1612'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24f974e9_c989_4637_9039_1c400e3fd014'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/behaviors'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1921'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy')]), 'shell': False}
+[1.109384] (-) TimerEvent: {}
+[1.143795] (behaviors) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o\x1b[0m\n'}
+[1.147686] (behaviors) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o\x1b[0m\n'}
+[1.209496] (-) TimerEvent: {}
+[1.310218] (-) TimerEvent: {}
+[1.410601] (-) TimerEvent: {}
+[1.511005] (-) TimerEvent: {}
+[1.614385] (-) TimerEvent: {}
+[1.714888] (-) TimerEvent: {}
+[1.815341] (-) TimerEvent: {}
+[1.915752] (-) TimerEvent: {}
+[2.016147] (-) TimerEvent: {}
+[2.116888] (-) TimerEvent: {}
+[2.217300] (-) TimerEvent: {}
+[2.317743] (-) TimerEvent: {}
+[2.418152] (-) TimerEvent: {}
+[2.518540] (-) TimerEvent: {}
+[2.619778] (-) TimerEvent: {}
+[2.720149] (-) TimerEvent: {}
+[2.820545] (-) TimerEvent: {}
+[2.921623] (-) TimerEvent: {}
+[3.022011] (-) TimerEvent: {}
+[3.122383] (-) TimerEvent: {}
+[3.222831] (-) TimerEvent: {}
+[3.311812] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.312095] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.312202] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:68:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected class-name before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.312306] (behaviors) StderrLine: {'line': b'   68 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[3.312401] (behaviors) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.322985] (-) TimerEvent: {}
+[3.323626] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Knav2_behaviors::TimedBehavior<ActionT>::TimedBehavior()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.323833] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:79:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.323936] (behaviors) StderrLine: {'line': b'   79 |   \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[3.324027] (behaviors) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.324107] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.324201] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:117:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing SharedPtr = class std::shared_ptr<rclcpp_lifecycle::LifecycleNode>\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<rclcpp_lifecycle::LifecycleNode>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Klock\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.324299] (behaviors) StderrLine: {'line': b'  117 |     auto node = node_.\x1b[01;31m\x1b[Klock\x1b[m\x1b[K();\n'}
+[3.324391] (behaviors) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.327488] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:119:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.327877] (behaviors) StderrLine: {'line': b'  119 |     \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K = node->get_logger();\n'}
+[3.328090] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.328185] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.328277] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.328364] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.328443] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.328522] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.328598] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.328676] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.328751] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.328853] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.328940] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.329033] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.329116] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.329201] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.329284] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:121:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.329376] (behaviors) StderrLine: {'line': b'  121 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Configuring %s", name.c_str());\n'}
+[3.329460] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.329548] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:121:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.329638] (behaviors) StderrLine: {'line': b'  121 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Configuring %s", name.c_str());\n'}
+[3.329724] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.329808] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:121:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.329895] (behaviors) StderrLine: {'line': b'  121 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Configuring %s", name.c_str());\n'}
+[3.329985] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.330078] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.330177] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.330274] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:141:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.330367] (behaviors) StderrLine: {'line': b'  141 |     vel_pub_ = node->template create_publisher<geometry_msgs::msg::Twist\x1b[01;31m\x1b[K>\x1b[m\x1b[K("cmd_vel", 1);\n'}
+[3.330458] (behaviors) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.330893] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.331092] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.331205] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.331301] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.331396] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.331490] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.331584] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.331675] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.331776] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.331868] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.331960] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.332051] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.332133] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.332249] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::activate()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.332365] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.332451] (behaviors) StderrLine: {'line': b'  157 |     RCLCPP_INFO(\x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K, "Activating %s", behavior_name_.c_str());\n'}
+[3.332547] (behaviors) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.332642] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.332736] (behaviors) StderrLine: {'line': b'  157 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Activating %s", behavior_name_.c_str());\n'}
+[3.332860] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.332957] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.333053] (behaviors) StderrLine: {'line': b'  157 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Activating %s", behavior_name_.c_str());\n'}
+[3.333153] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.333362] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.333472] (behaviors) StderrLine: {'line': b'  157 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Activating %s", behavior_name_.c_str());\n'}
+[3.333569] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.333666] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::execute()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.333768] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.333863] (behaviors) StderrLine: {'line': b'  193 |     RCLCPP_INFO(\x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K, "Running %s", behavior_name_.c_str());\n'}
+[3.333954] (behaviors) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.334040] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.334140] (behaviors) StderrLine: {'line': b'  193 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Running %s", behavior_name_.c_str());\n'}
+[3.334257] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.334375] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.334465] (behaviors) StderrLine: {'line': b'  193 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Running %s", behavior_name_.c_str());\n'}
+[3.334559] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.334651] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.334752] (behaviors) StderrLine: {'line': b'  193 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Running %s", behavior_name_.c_str());\n'}
+[3.334849] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.335536] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:197:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.335801] (behaviors) StderrLine: {'line': b'  197 |         \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K,\n'}
+[3.335911] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.336003] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:196:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.336095] (behaviors) StderrLine: {'line': b'  196 |       \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(\n'}
+[3.336184] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.336274] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:196:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.336365] (behaviors) StderrLine: {'line': b'  196 |       \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(\n'}
+[3.336455] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.336552] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:196:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.336643] (behaviors) StderrLine: {'line': b'  196 |       \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(\n'}
+[3.336730] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.339623] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.339863] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.339960] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:205:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KResultStatus\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.340055] (behaviors) StderrLine: {'line': b'  205 |     \x1b[01;31m\x1b[KResultStatus\x1b[m\x1b[K on_run_result = onRun(action_server_->get_current_goal());\n'}
+[3.340144] (behaviors) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.343932] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:206:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kon_run_result\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.344209] (behaviors) StderrLine: {'line': b'  206 |     if (\x1b[01;31m\x1b[Kon_run_result\x1b[m\x1b[K != Status::SUCCEEDED) {\n'}
+[3.344306] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.347169] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.347449] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.347552] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.347642] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.347724] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.347813] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.347913] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.348000] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.348093] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.348188] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.348275] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.348363] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.348457] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.348551] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:208:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.348644] (behaviors) StderrLine: {'line': b'  208 |         \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K,\n'}
+[3.348741] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.348841] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:207:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.348935] (behaviors) StderrLine: {'line': b'  207 |       \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(\n'}
+[3.349028] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.349117] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:207:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.349206] (behaviors) StderrLine: {'line': b'  207 |       \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(\n'}
+[3.349312] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.349404] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:207:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.349504] (behaviors) StderrLine: {'line': b'  207 |       \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(\n'}
+[3.349606] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.352662] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.352972] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[3.353072] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.353166] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.353257] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.353343] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.353430] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.353516] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.353603] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.353690] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.353776] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.353863] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.353948] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.354032] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:\x1b[m\x1b[K In lambda function:\n'}
+[3.354117] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:216:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krecovery_name_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.354206] (behaviors) StderrLine: {'line': b'  216 |       [&]() {RCLCPP_INFO(node_->get_logger(), "%s running...", \x1b[01;31m\x1b[Krecovery_name_\x1b[m\x1b[K.c_str());});\n'}
+[3.354289] (behaviors) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.354383] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.354465] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.354547] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::execute()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.354644] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:219:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kauto result\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.354731] (behaviors) StderrLine: {'line': b'  219 |     auto \x1b[01;31m\x1b[Kresult\x1b[m\x1b[K = std::make_shared<typename ActionT::Result>();\n'}
+[3.354815] (behaviors) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.354900] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:203:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto result\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[3.354992] (behaviors) StderrLine: {'line': b'  203 |     auto \x1b[01;36m\x1b[Kresult\x1b[m\x1b[K = std::make_shared<typename ActionT::Result>();\n'}
+[3.355079] (behaviors) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.356965] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:223:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelasped_time_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.357184] (behaviors) StderrLine: {'line': b'  223 |       \x1b[01;31m\x1b[Kelasped_time_\x1b[m\x1b[K = steady_clock_.now() - start_time;\n'}
+[3.357280] (behaviors) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.360089] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.360364] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.360481] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.360576] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.360669] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.360743] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.360845] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.360937] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.361029] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.361115] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.361258] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.361354] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.361453] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.361542] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.361638] (behaviors) StderrLine: {'line': b'  225 |         RCLCPP_INFO(\x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K, "Canceling %s", behavior_name_.c_str());\n'}
+[3.361723] (behaviors) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.361802] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.361878] (behaviors) StderrLine: {'line': b'  225 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Canceling %s", behavior_name_.c_str());\n'}
+[3.361955] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.362038] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.362125] (behaviors) StderrLine: {'line': b'  225 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Canceling %s", behavior_name_.c_str());\n'}
+[3.362203] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.362283] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.362364] (behaviors) StderrLine: {'line': b'  225 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(logger_, "Canceling %s", behavior_name_.c_str());\n'}
+[3.362439] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.363346] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:235:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.363558] (behaviors) StderrLine: {'line': b'  235 |           \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K, "Received a preemption request for %s,"\n'}
+[3.363647] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.363733] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:234:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.363831] (behaviors) StderrLine: {'line': b'  234 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(\n'}
+[3.363917] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.364003] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:234:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.364090] (behaviors) StderrLine: {'line': b'  234 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(\n'}
+[3.364179] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.364265] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:234:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.364354] (behaviors) StderrLine: {'line': b'  234 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(\n'}
+[3.364444] (behaviors) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.366620] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:247:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.366800] (behaviors) StderrLine: {'line': b'  247 |             \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K,\n'}
+[3.366887] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.366971] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:246:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.367058] (behaviors) StderrLine: {'line': b'  246 |           \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(\n'}
+[3.367143] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.367226] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:246:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.367312] (behaviors) StderrLine: {'line': b'  246 |           \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(\n'}
+[3.367397] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.367494] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:246:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.367583] (behaviors) StderrLine: {'line': b'  246 |           \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(\n'}
+[3.367667] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.369589] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.369751] (behaviors) StderrLine: {'line': b'  254 |           RCLCPP_WARN(\x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K, "%s failed", behavior_name_.c_str());\n'}
+[3.369837] (behaviors) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.369921] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.370006] (behaviors) StderrLine: {'line': b'  254 |           \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(logger_, "%s failed", behavior_name_.c_str());\n'}
+[3.370095] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.370179] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.370267] (behaviors) StderrLine: {'line': b'  254 |           \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(logger_, "%s failed", behavior_name_.c_str());\n'}
+[3.370351] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.370436] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.370521] (behaviors) StderrLine: {'line': b'  254 |           \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(logger_, "%s failed", behavior_name_.c_str());\n'}
+[3.370606] (behaviors) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.423129] (-) TimerEvent: {}
+[3.523543] (-) TimerEvent: {}
+[3.624889] (-) TimerEvent: {}
+[3.635338] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.635617] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.635712] (behaviors) StderrLine: {'line': b'/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass nav2_behaviors::TimedBehavior<msgs::action::Teleop>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.635778] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:27:\x1b[m\x1b[K   required from here\n'}
+[3.635834] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:111:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::SharedPtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[3.635917] (behaviors) StderrLine: {'line': b'  111 |   void \x1b[01;31m\x1b[Kconfigure\x1b[m\x1b[K(\n'}
+[3.635972] (behaviors) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.636026] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:147:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::cleanup() [with ActionT = msgs::action::Teleop]\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[3.636083] (behaviors) StderrLine: {'line': b'  147 |   void \x1b[01;31m\x1b[Kcleanup\x1b[m\x1b[K() override\n'}
+[3.636137] (behaviors) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.636191] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:155:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::activate() [with ActionT = msgs::action::Teleop]\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[3.636246] (behaviors) StderrLine: {'line': b'  155 |   void \x1b[01;31m\x1b[Kactivate\x1b[m\x1b[K() override\n'}
+[3.636308] (behaviors) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.636395] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:164:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::TimedBehavior<ActionT>::deactivate() [with ActionT = msgs::action::Teleop]\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[3.636478] (behaviors) StderrLine: {'line': b'  164 |   void \x1b[01;31m\x1b[Kdeactivate\x1b[m\x1b[K() override\n'}
+[3.636557] (behaviors) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.690695] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.690976] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:75:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::Teleop::onConfigure()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.691096] (behaviors) StderrLine: {'line': b'   75 |     void \x1b[01;31m\x1b[KTeleop\x1b[m\x1b[K::onConfigure()\n'}
+[3.691182] (behaviors) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.691270] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:75:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid nav2_behaviors::Teleop::onConfigure()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.692061] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.692205] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass nav2_behaviors::Teleop\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[3.692269] (behaviors) StderrLine: {'line': b'   22 |     class \x1b[01;36m\x1b[KTeleop\x1b[m\x1b[K : public TimedBehavior<TeleopAction>\n'}
+[3.692325] (behaviors) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.698944] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual nav2_behaviors::Status nav2_behaviors::Teleop::onCycleUpdate()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.699147] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:169:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelasped_time_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kend_time_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.699216] (behaviors) StderrLine: {'line': b'  169 |         feedback_->time_left = \x1b[01;31m\x1b[Kelasped_time_\x1b[m\x1b[K;\n'}
+[3.699271] (behaviors) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.699323] (behaviors) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kend_time_\x1b[m\x1b[K\n'}
+[3.725010] (-) TimerEvent: {}
+[3.738702] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.739061] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.739187] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.739277] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.739365] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.739458] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.739547] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.739645] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.739738] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.739818] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.739927] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.740018] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.740105] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.740186] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:244:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.740275] (behaviors) StderrLine: {'line': b'  244 |             \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K,\n'}
+[3.740370] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.740465] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.740557] (behaviors) StderrLine: {'line': b'  243 |             \x1b[01;31m\x1b[KRCLCPP_WARN_STREAM\x1b[m\x1b[K(\n'}
+[3.740650] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.740739] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.740845] (behaviors) StderrLine: {'line': b'  243 |             \x1b[01;31m\x1b[KRCLCPP_WARN_STREAM\x1b[m\x1b[K(\n'}
+[3.740929] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.741030] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.741135] (behaviors) StderrLine: {'line': b'  243 |             \x1b[01;31m\x1b[KRCLCPP_WARN_STREAM\x1b[m\x1b[K(\n'}
+[3.741220] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.743479] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:258:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klocal_frame_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kglobal_frame_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.743699] (behaviors) StderrLine: {'line': b'  258 |             current_pose, *tf_, \x1b[01;31m\x1b[Klocal_frame_\x1b[m\x1b[K, robot_base_frame_,\n'}
+[3.743783] (behaviors) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.743864] (behaviors) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[Kglobal_frame_\x1b[m\x1b[K\n'}
+[3.746171] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[3.746423] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[3.746527] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.746616] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[3.746703] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.746791] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.746876] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[3.746961] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.747041] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.747127] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[3.747211] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31\x1b[m\x1b[K,\n'}
+[3.747297] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12\x1b[m\x1b[K,\n'}
+[3.747394] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4\x1b[m\x1b[K:\n'}
+[3.747483] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:262:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klogger_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.747579] (behaviors) StderrLine: {'line': b'  262 |             \x1b[01;31m\x1b[Klogger_\x1b[m\x1b[K,\n'}
+[3.747664] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.747871] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:261:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.747981] (behaviors) StderrLine: {'line': b'  261 |             \x1b[01;31m\x1b[KRCLCPP_ERROR_STREAM\x1b[m\x1b[K(\n'}
+[3.748067] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.748161] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:261:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.748252] (behaviors) StderrLine: {'line': b'  261 |             \x1b[01;31m\x1b[KRCLCPP_ERROR_STREAM\x1b[m\x1b[K(\n'}
+[3.748340] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.748435] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:261:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.748522] (behaviors) StderrLine: {'line': b'  261 |             \x1b[01;31m\x1b[KRCLCPP_ERROR_STREAM\x1b[m\x1b[K(\n'}
+[3.748608] (behaviors) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.815587] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kbehavior_server::BehaviorServer::BehaviorServer(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.815914] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:25:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-Werror=unused-parameter\x1b[m\x1b[K]\n'}
+[3.815989] (behaviors) StderrLine: {'line': b'   25 | BehaviorServer::BehaviorServer(\x1b[01;31m\x1b[Kconst rclcpp::NodeOptions & options\x1b[m\x1b[K)\n'}
+[3.816045] (behaviors) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.825109] (-) TimerEvent: {}
+[3.928009] (-) TimerEvent: {}
+[4.028409] (-) TimerEvent: {}
+[4.128967] (-) TimerEvent: {}
+[4.229409] (-) TimerEvent: {}
+[4.329808] (-) TimerEvent: {}
+[4.412201] (behaviors) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:57\x1b[m\x1b[K,\n'}
+[4.412500] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[4.412600] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[4.412687] (behaviors) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:280\x1b[m\x1b[K:\n'}
+[4.412770] (behaviors) StderrLine: {'line': b'/opt/ros/foxy/include/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = nav2_behaviors::Teleop; B = nav2_core::Recovery]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.412874] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[4.412954] (behaviors) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/class_loader/meta_object.hpp:218:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Knav2_behaviors::Teleop*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Knav2_core::Recovery*\x1b[m\x1b[K\xe2\x80\x99 in return\n'}
+[4.413038] (behaviors) StderrLine: {'line': b'  218 |     return new \x1b[01;31m\x1b[KC\x1b[m\x1b[K;\n'}
+[4.413118] (behaviors) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.430214] (-) TimerEvent: {}
+[4.530593] (-) TimerEvent: {}
+[4.536864] (behaviors) StderrLine: {'line': b'make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1\n'}
+[4.537193] (behaviors) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2\n'}
+[4.537306] (behaviors) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[4.630686] (-) TimerEvent: {}
+[4.731066] (-) TimerEvent: {}
+[4.831444] (-) TimerEvent: {}
+[4.931850] (-) TimerEvent: {}
+[5.032241] (-) TimerEvent: {}
+[5.132574] (-) TimerEvent: {}
+[5.232962] (-) TimerEvent: {}
+[5.333335] (-) TimerEvent: {}
+[5.433719] (-) TimerEvent: {}
+[5.534070] (-) TimerEvent: {}
+[5.634395] (-) TimerEvent: {}
+[5.734744] (-) TimerEvent: {}
+[5.835155] (-) TimerEvent: {}
+[5.935536] (-) TimerEvent: {}
+[6.035862] (-) TimerEvent: {}
+[6.136261] (-) TimerEvent: {}
+[6.236658] (-) TimerEvent: {}
+[6.337004] (-) TimerEvent: {}
+[6.437343] (-) TimerEvent: {}
+[6.537745] (-) TimerEvent: {}
+[6.638146] (-) TimerEvent: {}
+[6.738609] (-) TimerEvent: {}
+[6.839021] (-) TimerEvent: {}
+[6.939427] (-) TimerEvent: {}
+[7.039822] (-) TimerEvent: {}
+[7.140188] (-) TimerEvent: {}
+[7.240595] (-) TimerEvent: {}
+[7.341027] (-) TimerEvent: {}
+[7.441355] (-) TimerEvent: {}
+[7.541746] (-) TimerEvent: {}
+[7.642087] (-) TimerEvent: {}
+[7.742444] (-) TimerEvent: {}
+[7.842787] (-) TimerEvent: {}
+[7.943168] (-) TimerEvent: {}
+[8.043569] (-) TimerEvent: {}
+[8.143998] (-) TimerEvent: {}
+[8.244401] (-) TimerEvent: {}
+[8.344743] (-) TimerEvent: {}
+[8.445163] (-) TimerEvent: {}
+[8.545507] (-) TimerEvent: {}
+[8.645809] (-) TimerEvent: {}
+[8.746137] (-) TimerEvent: {}
+[8.846536] (-) TimerEvent: {}
+[8.946870] (-) TimerEvent: {}
+[9.047198] (-) TimerEvent: {}
+[9.147610] (-) TimerEvent: {}
+[9.247989] (-) TimerEvent: {}
+[9.348376] (-) TimerEvent: {}
+[9.448770] (-) TimerEvent: {}
+[9.549203] (-) TimerEvent: {}
+[9.649555] (-) TimerEvent: {}
+[9.749941] (-) TimerEvent: {}
+[9.850499] (-) TimerEvent: {}
+[9.950899] (-) TimerEvent: {}
+[10.051218] (-) TimerEvent: {}
+[10.151597] (-) TimerEvent: {}
+[10.251998] (-) TimerEvent: {}
+[10.352401] (-) TimerEvent: {}
+[10.452744] (-) TimerEvent: {}
+[10.553146] (-) TimerEvent: {}
+[10.653619] (-) TimerEvent: {}
+[10.753997] (-) TimerEvent: {}
+[10.854359] (-) TimerEvent: {}
+[10.954767] (-) TimerEvent: {}
+[11.055084] (-) TimerEvent: {}
+[11.084227] (behaviors) StderrLine: {'line': b'cc1plus: all warnings being treated as errors\n'}
+[11.116971] (behaviors) StderrLine: {'line': b'make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1\n'}
+[11.117248] (behaviors) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2\n'}
+[11.117359] (behaviors) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[11.123223] (behaviors) CommandEnded: {'returncode': 2}
+[11.155189] (-) TimerEvent: {}
+[11.232110] (behaviors) JobEnded: {'identifier': 'behaviors', 'rc': 2}
+[11.242911] (-) EventReactorShutdown: {}

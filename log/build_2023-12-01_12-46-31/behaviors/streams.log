@@ -1,0 +1,43 @@
+[0.142s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.187s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.188s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.188s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.188s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.188s]   the cmake_policy command to set the policy and suppress this warning.
+[0.188s] 
+[0.188s] Call Stack (most recent call first):
+[0.189s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.189s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.189s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.189s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.189s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.189s]   CMakeLists.txt:19 (find_package)
+[0.189s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.189s] [0m
+[0.210s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.475s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.526s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.533s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.609s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.644s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.723s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.773s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.774s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.775s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.836s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.836s] -- Looking for pthread_create in pthreads
+[0.882s] -- Looking for pthread_create in pthreads - not found
+[0.882s] -- Looking for pthread_create in pthread
+[0.940s] -- Looking for pthread_create in pthread - found
+[0.941s] -- Found Threads: TRUE  
+[1.072s] -- Found nav2_behavior_tree: 0.4.7 (/opt/ros/foxy/share/nav2_behavior_tree/cmake)
+[2.156s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[2.165s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[2.623s] -- Found nav2_core: 0.4.7 (/opt/ros/foxy/share/nav2_core/cmake)
+[3.578s] -- Configuring incomplete, errors occurred!
+[3.578s] [31mCMake Error at CMakeLists.txt:32 (nav2_package):
+[3.578s]   Unknown CMake command "nav2_package".
+[3.578s] 
+[3.578s] [0m
+[3.586s] make: *** [Makefile:226: cmake_check_build_system] Error 1
+[3.591s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

@@ -1,0 +1,7 @@
+[0.055s] Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+[0.089s] [ 25%] [32mBuilding CXX object CMakeFiles/nav2_client_util.dir/src/nav2_client_util.cpp.o[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/clicked_point_to_pose.dir/src/clicked_point_to_pose.cpp.o[0m
+[2.406s] [ 75%] [32m[1mLinking CXX executable nav2_client_util[0m
+[2.527s] [ 75%] Built target nav2_client_util
+[3.666s] [100%] [32m[1mLinking CXX executable clicked_point_to_pose[0m
+[3.818s] [100%] Built target clicked_point_to_pose

@@ -1,0 +1,19 @@
+#goal definition 
+builtin_interfaces/Duration time
+---
+#result definition 
+uint16 NONE=0
+uint16 TIMEOUT=731
+uint16 TF_ERROR=732
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+#feedback definition 
+builtin_interfaces/Duration time_left
+
+# int32 order
+# ---
+# int32[] sequence
+# ---
+# int32[] partial_sequence

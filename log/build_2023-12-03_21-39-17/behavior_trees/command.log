@@ -1,0 +1,1 @@
+Invoking command in '/home/ashmitha/ros_ws/build/behavior_trees': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behavior_trees -- -j8 -l8

@@ -1,0 +1,17 @@
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:34:10:[m[K [01;31m[Kfatal error: [m[Knav2_core/behavior.hpp: No such file or directory
+   34 | #include [01;31m[K"nav2_core/behavior.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:26:10:[m[K [01;31m[Kfatal error: [m[Knav2_core/behavior.hpp: No such file or directory
+   26 | #include [01;31m[K"nav2_core/behavior.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

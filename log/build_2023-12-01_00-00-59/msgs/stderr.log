@@ -1,0 +1,57 @@
+[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+Error parsing '/home/ashmitha/ros_ws/src/msgs/package.xml':
+Traceback (most recent call last):
+  File "/home/ashmitha/anaconda3/lib/python3.11/site-packages/catkin_pkg/package.py", line 610, in parse_package_string
+    root = dom.parseString(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashmitha/anaconda3/lib/python3.11/xml/dom/minidom.py", line 2000, in parseString
+    return expatbuilder.parseString(string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashmitha/anaconda3/lib/python3.11/xml/dom/expatbuilder.py", line 925, in parseString
+    return builder.parseString(string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashmitha/anaconda3/lib/python3.11/xml/dom/expatbuilder.py", line 223, in parseString
+    parser.Parse(string, True)
+xml.parsers.expat.ExpatError: junk after document element: line 27, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+    main()
+  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+    raise e
+  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+    package = parse_package_string(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashmitha/anaconda3/lib/python3.11/site-packages/catkin_pkg/package.py", line 612, in parse_package_string
+    raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+catkin_pkg.package.InvalidPackage: Error(s) in package '/home/ashmitha/ros_ws/src/msgs/package.xml':
+The manifest contains invalid XML:
+junk after document element: line 27, column 0
+[31mCMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+  execute_process(/home/ashmitha/anaconda3/bin/python3
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+  /home/ashmitha/ros_ws/src/msgs/package.xml
+  /home/ashmitha/ros_ws/build/msgs/ament_cmake_core/package.cmake) returned
+  error code 1
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+  /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+  CMakeLists.txt:35 (ament_lint_auto_find_test_dependencies)
+
+[0m
+make: *** [Makefile:719: cmake_check_build_system] Error 1

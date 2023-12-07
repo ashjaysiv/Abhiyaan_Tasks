@@ -1,0 +1,22 @@
+[ 50%] Built target nav2_client_util
+[100%] Built target clicked_point_to_pose
+-- Install configuration: ""
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/nav2_client_util
+-- Set runtime path of "/home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/nav2_client_util" to ""
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/clicked_point_to_pose
+-- Set runtime path of "/home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/clicked_point_to_pose" to ""
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/package_run_dependencies/nav2_test_utils
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/parent_prefix_path/nav2_test_utils
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/ament_prefix_path.sh
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/ament_prefix_path.dsv
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/path.sh
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/path.dsv
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.bash
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.sh
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.zsh
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.dsv
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.dsv
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/packages/nav2_test_utils
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/cmake/nav2_test_utilsConfig.cmake
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/cmake/nav2_test_utilsConfig-version.cmake
+-- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.xml

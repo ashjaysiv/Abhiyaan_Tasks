@@ -1,0 +1,47 @@
+[0.034s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': AMENT_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/ashmitha/ros_ws/install/msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.061s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.062s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.063s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.063s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.063s]   the cmake_policy command to set the policy and suppress this warning.
+[0.063s] 
+[0.063s] Call Stack (most recent call first):
+[0.063s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.063s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.063s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.063s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.063s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.063s]   CMakeLists.txt:19 (find_package)
+[0.063s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.063s] [0m
+[0.076s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.233s] -- Found nav2_common: 0.4.7 (/opt/ros/foxy/share/nav2_common/cmake)
+[0.233s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.256s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.259s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.353s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.387s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.387s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.483s] -- Found nav2_behavior_tree: 0.4.7 (/opt/ros/foxy/share/nav2_behavior_tree/cmake)
+[1.058s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.306s] -- Found nav2_core: 0.4.7 (/opt/ros/foxy/share/nav2_core/cmake)
+[2.029s] -- Found msgs: 0.0.0 (/home/ashmitha/ros_ws/install/msgs/share/msgs/cmake)
+[8.062s] [31mCMake Error at CMakeLists.txt:113 (rosidl_target_interfaces):
+[8.062s]   rosidl_target_interfaces Function invoked with incorrect arguments for
+[8.062s]   function named: rosidl_target_interfaces
+[8.062s] 
+[8.062s] [0m
+[8.062s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[8.120s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.120s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.121s] -- Configured cppcheck include dirs: /home/ashmitha/ros_ws/src/behaviors/include;/home/ashmitha/ros_ws/src/behaviors/./include;/home/ashmitha/ros_ws/src/behaviors/..
+[8.121s] -- Configured cppcheck exclude dirs and/or files: 
+[8.121s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.121s] -- Configured cpplint exclude dirs and/or files: 
+[8.121s] -- Added test 'lint_cmake' to check CMake code style
+[8.122s] -- Added test 'uncrustify' to check C / C++ code style
+[8.122s] -- Configured uncrustify additional arguments: 
+[8.122s] -- Added test 'xmllint' to check XML markup files
+[8.123s] -- Configuring incomplete, errors occurred!
+[8.130s] make: *** [Makefile:349: cmake_check_build_system] Error 1
+[8.134s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': AMENT_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/ashmitha/ros_ws/install/msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

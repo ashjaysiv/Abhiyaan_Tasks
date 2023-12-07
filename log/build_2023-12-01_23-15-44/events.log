@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000559] (-) JobUnselected: {'identifier': 'behavior_trees'}
+[0.000606] (-) JobUnselected: {'identifier': 'msgs'}
+[0.000625] (-) JobUnselected: {'identifier': 'nav2_test_utils'}
+[0.000646] (behaviors) JobQueued: {'identifier': 'behaviors', 'dependencies': OrderedDict([('msgs', '/home/ashmitha/ros_ws/install/msgs')])}
+[0.000692] (behaviors) JobStarted: {'identifier': 'behaviors'}
+[0.038338] (behaviors) JobProgress: {'identifier': 'behaviors', 'progress': 'cmake'}
+[0.039184] (behaviors) JobProgress: {'identifier': 'behaviors', 'progress': 'build'}
+[0.040151] (behaviors) Command: {'cmd': ['/home/ashmitha/.local/bin/cmake', '--build', '/home/ashmitha/ros_ws/build/behaviors', '--', '-j8', '-l8'], 'cwd': '/home/ashmitha/ros_ws/build/behaviors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ashmitha'), ('SSH_AGENT_PID', '1781'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'gnome-flashback'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ashmitha/ros_ws/install/msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LESS', '-R'), ('HOME', '/home/ashmitha'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/ashmitha/ros_ws/src'), ('DESKTOP_SESSION', 'regolith'), ('NVM_BIN', '/home/ashmitha/.nvm/versions/node/v14.21.3/bin'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('NVM_INC', '/home/ashmitha/.nvm/versions/node/v14.21.3/include/node'), ('ZSH', '/home/ashmitha/.oh-my-zsh'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'less'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/ashmitha/.nvm'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ashmitha'), ('SUMO_HOME', '/usr/bin/sumo'), ('DESKTOP_AUTOSTART_ID', '107f0d473e22a1eef3170142925542008600000016990016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmitha'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/foxy/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/.nvm/versions/node/v14.21.3/bin:/home/ashmitha/anaconda3/bin:/home/ashmitha/anaconda3/condabin:/home/ashmitha/.local/bin:/home/ashmitha/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ashmitha-Inspiron-14-5410-2-in-1:@/tmp/.ICE-unix/1699,unix/ashmitha-Inspiron-14-5410-2-in-1:/tmp/.ICE-unix/1699'), ('XDG_MENU_PREFIX', 'gnome-flashback-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8cd50d0_e0b8_4383_96c6_ece49171d3f8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Regolith:GNOME-Flashback:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'regolith'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.76'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/ashmitha/anaconda3/bin/python'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'regolith'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmitha/ros_ws/build/behaviors'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-regolith:/etc/xdg'), ('CONDA_EXE', '/home/ashmitha/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/regolith:/home/ashmitha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.2010'), ('CONDA_PREFIX', '/home/ashmitha/anaconda3'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy')]), 'shell': False}
+[0.076604] (behaviors) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.077702] (behaviors) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.077893] (behaviors) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.077990] (behaviors) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.078078] (behaviors) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.078162] (behaviors) StderrLine: {'line': b'\n'}
+[0.078246] (behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.078333] (behaviors) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.078415] (behaviors) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.078491] (behaviors) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.078555] (behaviors) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.078618] (behaviors) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.078681] (behaviors) StderrLine: {'line': b'  CMakeLists.txt:7 (find_package)\n'}
+[0.078744] (behaviors) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.078808] (behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[0.095449] (behaviors) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3\n'}
+[0.099225] (-) TimerEvent: {}
+[0.199851] (-) TimerEvent: {}
+[0.277843] (behaviors) StdoutLine: {'line': b'-- Found nav2_common: 0.4.7 (/opt/ros/foxy/share/nav2_common/cmake)\n'}
+[0.278090] (behaviors) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.300083] (-) TimerEvent: {}
+[0.305800] (behaviors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.308636] (behaviors) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.400355] (-) TimerEvent: {}
+[0.441932] (behaviors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.484530] (behaviors) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.485713] (behaviors) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500640] (-) TimerEvent: {}
+[0.589873] (behaviors) StdoutLine: {'line': b'-- Found nav2_behavior_tree: 0.4.7 (/opt/ros/foxy/share/nav2_behavior_tree/cmake)\n'}
+[0.600854] (-) TimerEvent: {}
+[0.701600] (-) TimerEvent: {}
+[0.802325] (-) TimerEvent: {}
+[0.902866] (-) TimerEvent: {}
+[1.003255] (-) TimerEvent: {}
+[1.103737] (-) TimerEvent: {}
+[1.204510] (-) TimerEvent: {}
+[1.263990] (behaviors) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[1.304617] (-) TimerEvent: {}
+[1.405293] (-) TimerEvent: {}
+[1.505764] (-) TimerEvent: {}
+[1.567392] (behaviors) StdoutLine: {'line': b'-- Found nav2_core: 0.4.7 (/opt/ros/foxy/share/nav2_core/cmake)\n'}
+[1.605888] (-) TimerEvent: {}
+[1.706363] (-) TimerEvent: {}
+[1.806927] (-) TimerEvent: {}
+[1.907705] (-) TimerEvent: {}
+[2.008352] (-) TimerEvent: {}
+[2.108872] (-) TimerEvent: {}
+[2.209320] (-) TimerEvent: {}
+[2.309828] (-) TimerEvent: {}
+[2.366793] (behaviors) StdoutLine: {'line': b'-- Found msgs: 0.0.0 (/home/ashmitha/ros_ws/install/msgs/share/msgs/cmake)\n'}
+[2.409998] (-) TimerEvent: {}
+[2.510424] (-) TimerEvent: {}
+[2.610892] (-) TimerEvent: {}
+[2.711595] (-) TimerEvent: {}
+[2.812055] (-) TimerEvent: {}
+[2.912810] (-) TimerEvent: {}
+[3.013300] (-) TimerEvent: {}
+[3.113772] (-) TimerEvent: {}
+[3.214223] (-) TimerEvent: {}
+[3.314716] (-) TimerEvent: {}
+[3.415163] (-) TimerEvent: {}
+[3.515735] (-) TimerEvent: {}
+[3.616483] (-) TimerEvent: {}
+[3.716936] (-) TimerEvent: {}
+[3.817390] (-) TimerEvent: {}
+[3.917859] (-) TimerEvent: {}
+[4.018515] (-) TimerEvent: {}
+[4.119027] (-) TimerEvent: {}
+[4.219532] (-) TimerEvent: {}
+[4.320046] (-) TimerEvent: {}
+[4.420577] (-) TimerEvent: {}
+[4.521199] (-) TimerEvent: {}
+[4.621741] (-) TimerEvent: {}
+[4.722229] (-) TimerEvent: {}
+[4.822946] (-) TimerEvent: {}
+[4.923717] (-) TimerEvent: {}
+[5.024318] (-) TimerEvent: {}
+[5.124846] (-) TimerEvent: {}
+[5.225517] (-) TimerEvent: {}
+[5.326023] (-) TimerEvent: {}
+[5.426528] (-) TimerEvent: {}
+[5.527059] (-) TimerEvent: {}
+[5.627782] (-) TimerEvent: {}
+[5.728328] (-) TimerEvent: {}
+[5.829002] (-) TimerEvent: {}
+[5.929767] (-) TimerEvent: {}
+[6.030194] (-) TimerEvent: {}
+[6.130640] (-) TimerEvent: {}
+[6.231240] (-) TimerEvent: {}
+[6.331860] (-) TimerEvent: {}
+[6.432349] (-) TimerEvent: {}
+[6.533142] (-) TimerEvent: {}
+[6.633653] (-) TimerEvent: {}
+[6.734171] (-) TimerEvent: {}
+[6.834863] (-) TimerEvent: {}
+[6.935291] (-) TimerEvent: {}
+[7.035776] (-) TimerEvent: {}
+[7.136532] (-) TimerEvent: {}
+[7.237240] (-) TimerEvent: {}
+[7.337815] (-) TimerEvent: {}
+[7.438244] (-) TimerEvent: {}
+[7.538819] (-) TimerEvent: {}
+[7.639336] (-) TimerEvent: {}
+[7.739794] (-) TimerEvent: {}
+[7.840270] (-) TimerEvent: {}
+[7.940759] (-) TimerEvent: {}
+[8.041127] (-) TimerEvent: {}
+[8.141604] (-) TimerEvent: {}
+[8.241987] (-) TimerEvent: {}
+[8.342465] (-) TimerEvent: {}
+[8.443111] (-) TimerEvent: {}
+[8.543634] (-) TimerEvent: {}
+[8.644131] (-) TimerEvent: {}
+[8.744658] (-) TimerEvent: {}
+[8.845340] (-) TimerEvent: {}
+[8.946083] (-) TimerEvent: {}
+[9.046602] (-) TimerEvent: {}
+[9.137401] (behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:40 (message):\n'}
+[9.137653] (behaviors) StderrLine: {'line': b"  rosidl_target_interfaces() the second argument 'msgs' must be a valid\n"}
+[9.137754] (behaviors) StderrLine: {'line': b'  target name\n'}
+[9.137842] (behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.137916] (behaviors) StderrLine: {'line': b'  CMakeLists.txt:108 (rosidl_target_interfaces)\n'}
+[9.137969] (behaviors) StderrLine: {'line': b'\n'}
+[9.138022] (behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[9.138076] (behaviors) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.145177] (behaviors) StderrLine: {'line': b'make: *** [Makefile:349: cmake_check_build_system] Error 1\n'}
+[9.146666] (-) TimerEvent: {}
+[9.150931] (behaviors) CommandEnded: {'returncode': 2}
+[9.241769] (behaviors) JobEnded: {'identifier': 'behaviors', 'rc': 2}
+[9.246946] (-) TimerEvent: {}
+[9.252831] (-) EventReactorShutdown: {}

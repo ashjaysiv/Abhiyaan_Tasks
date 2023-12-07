@@ -1,0 +1,38 @@
+[0.229s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[0.297s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.298s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.300s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.300s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.301s]   the cmake_policy command to set the policy and suppress this warning.
+[0.301s] 
+[0.301s] Call Stack (most recent call first):
+[0.301s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.301s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.301s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.302s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.302s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.302s]   CMakeLists.txt:8 (find_package)
+[0.302s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.302s] [0m
+[0.323s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3") 
+[0.323s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.716s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[0.716s]   By not providing "Findnav2_common.cmake" in CMAKE_MODULE_PATH this project
+[0.716s]   has asked CMake to find a package configuration file provided by
+[0.716s]   "nav2_common", but CMake did not find one.
+[0.716s] 
+[0.716s]   Could not find a package configuration file provided by "nav2_common" with
+[0.717s]   any of the following names:
+[0.717s] 
+[0.717s]     nav2_commonConfig.cmake
+[0.717s]     nav2_common-config.cmake
+[0.717s] 
+[0.717s]   Add the installation prefix of "nav2_common" to CMAKE_PREFIX_PATH or set
+[0.717s]   "nav2_common_DIR" to a directory containing one of the above files.  If
+[0.717s]   "nav2_common" provides a separate development package or SDK, be sure it
+[0.717s]   has been installed.
+[0.717s] 
+[0.718s] [0m
+[0.718s] -- Configuring incomplete, errors occurred!
+[0.718s] make: *** [Makefile:719: cmake_check_build_system] Error 1
+[0.727s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8

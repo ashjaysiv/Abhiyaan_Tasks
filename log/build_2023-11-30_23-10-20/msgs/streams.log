@@ -1,0 +1,89 @@
+[0.090s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake /home/ashmitha/ros_ws/src/msgs -DCMAKE_INSTALL_PREFIX=/home/ashmitha/ros_ws/install/msgs
+[0.115s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.116s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.116s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.116s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.116s]   the cmake_policy command to set the policy and suppress this warning.
+[0.116s] 
+[0.116s] Call Stack (most recent call first):
+[0.116s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.116s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.116s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.117s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.117s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.117s]   CMakeLists.txt:22 (find_package)
+[0.117s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.117s] [0m
+[0.131s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3") 
+[0.131s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.281s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.356s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.360s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.486s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.508s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[0.508s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.508s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.508s]   the cmake_policy command to set the policy and suppress this warning.
+[0.508s] 
+[0.508s] Call Stack (most recent call first):
+[0.508s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.508s]   CMakeLists.txt:40 (rosidl_generate_interfaces)
+[0.509s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.509s] [0m
+[0.524s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found version "3.11.4") 
+[0.561s] [31mCMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[0.561s]   execute_process(/home/ashmitha/anaconda3/bin/python3 -m rosidl_adapter
+[0.561s]   --package-name msgs --arguments-file
+[0.561s]   /home/ashmitha/ros_ws/build/msgs/rosidl_adapter__arguments__msgs.json
+[0.561s]   --output-dir /home/ashmitha/ros_ws/build/msgs/rosidl_adapter/msgs
+[0.562s]   --output-file /home/ashmitha/ros_ws/build/msgs/rosidl_adapter/msgs.idls)
+[0.562s]   returned error code 1:
+[0.562s] 
+[0.562s]   AttributeError processing template 'action.idl.em'
+[0.562s] 
+[0.562s]   Traceback (most recent call last):
+[0.562s] 
+[0.562s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 52, in evaluate_template
+[0.562s]       em.BUFFERED_OPT: True,
+[0.562s]       ^^^^^^^^^^^^^^^
+[0.562s] 
+[0.562s]   AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+[0.562s] 
+[0.562s] 
+[0.563s] 
+[0.563s]   During handling of the above exception, another exception occurred:
+[0.563s] 
+[0.563s] 
+[0.563s] 
+[0.563s]   Traceback (most recent call last):
+[0.563s] 
+[0.563s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.563s]     File "<frozen runpy>", line 88, in _run_code
+[0.563s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.563s]       sys.exit(main())
+[0.563s]                ^^^^^^
+[0.563s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.563s]       abs_idl_file = convert_to_idl(
+[0.563s]                      ^^^^^^^^^^^^^^^
+[0.563s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 29, in convert_to_idl
+[0.563s]       return convert_action_to_idl(
+[0.563s]              ^^^^^^^^^^^^^^^^^^^^^^
+[0.563s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/action/__init__.py", line 39, in convert_action_to_idl
+[0.563s]       expand_template('action.idl.em', data, output_file, encoding='iso-8859-1')
+[0.563s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 24, in expand_template
+[0.563s]       content = evaluate_template(template_name, data)
+[0.563s]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.563s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/resource/__init__.py", line 70, in evaluate_template
+[0.564s]       _interpreter.shutdown()
+[0.564s]       ^^^^^^^^^^^^^^^^^^^^^
+[0.564s] 
+[0.564s]   AttributeError: 'NoneType' object has no attribute 'shutdown'
+[0.564s] 
+[0.564s] Call Stack (most recent call first):
+[0.564s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.564s]   CMakeLists.txt:40 (rosidl_generate_interfaces)
+[0.564s] 
+[0.564s] [0m
+[0.564s] -- Configuring incomplete, errors occurred!
+[0.572s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake /home/ashmitha/ros_ws/src/msgs -DCMAKE_INSTALL_PREFIX=/home/ashmitha/ros_ws/install/msgs

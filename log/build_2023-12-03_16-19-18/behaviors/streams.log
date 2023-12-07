@@ -1,0 +1,55 @@
+[0.063s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': AMENT_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/ashmitha/ros_ws/install/msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.167s] [ 16%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[0.173s] [ 33%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[2.339s] In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+[2.339s]                  from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[2.340s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:68:1:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+[2.340s]    68 | [01;31m[K{[m[K
+[2.340s]       | [01;31m[K^[m[K
+[2.357s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In constructor ‘[01m[Knav2_behaviors::TimedBehavior<ActionT>::TimedBehavior()[m[K’:
+[2.357s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:79:3:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+[2.357s]    79 |   [01;31m[K{[m[K
+[2.357s]       |   [01;31m[K^[m[K
+[2.360s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>)[m[K’:
+[2.360s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:138:16:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[Knode_[m[K’?
+[2.360s]   138 |     vel_pub_ = [01;31m[Knode[m[K->template create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 1);
+[2.361s]       |                [01;31m[K^~~~[m[K
+[2.361s]       |                [32m[Knode_[m[K
+[2.362s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:138:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.362s]   138 |     vel_pub_ = node->template create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K("cmd_vel", 1);
+[2.362s]       |                                                                         [01;31m[K^[m[K
+[2.606s] /home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp: In instantiation of ‘[01m[Kclass nav2_behaviors::TimedBehavior<msgs::action::Teleop>[m[K’:
+[2.606s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:27:[m[K   required from here
+[2.606s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:111:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::SharedPtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[2.606s]   111 |   void [01;31m[Kconfigure[m[K(
+[2.606s]       |        [01;31m[K^~~~~~~~~[m[K
+[2.606s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:144:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::cleanup() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[2.606s]   144 |   void [01;31m[Kcleanup[m[K() override
+[2.606s]       |        [01;31m[K^~~~~~~[m[K
+[2.606s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:152:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::activate() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[2.606s]   152 |   void [01;31m[Kactivate[m[K() override
+[2.607s]       |        [01;31m[K^~~~~~~~[m[K
+[2.607s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:161:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::deactivate() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[2.607s]   161 |   void [01;31m[Kdeactivate[m[K() override
+[2.607s]       |        [01;31m[K^~~~~~~~~~[m[K
+[2.892s] [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In constructor ‘[01m[Kbehavior_server::BehaviorServer::BehaviorServer(const rclcpp::NodeOptions&)[m[K’:
+[2.892s] [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:25:60:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+[2.892s]    25 | BehaviorServer::BehaviorServer([01;31m[Kconst rclcpp::NodeOptions & options[m[K)
+[2.892s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[4.153s] In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:57[m[K,
+[4.153s]                  from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55[m[K,
+[4.153s]                  from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+[4.153s]                  from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:276[m[K:
+[4.153s] /opt/ros/foxy/include/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = nav2_behaviors::Teleop; B = nav2_core::Recovery][m[K’:
+[4.153s] [01m[K/opt/ros/foxy/include/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[4.153s] [01m[K/opt/ros/foxy/include/class_loader/meta_object.hpp:218:16:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Knav2_behaviors::Teleop*[m[K’ to ‘[01m[Knav2_core::Recovery*[m[K’ in return
+[4.153s]   218 |     return new [01;31m[KC[m[K;
+[4.153s]       |                [01;31m[K^[m[K
+[4.511s] make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+[4.511s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+[4.511s] make[1]: *** Waiting for unfinished jobs....
+[10.258s] cc1plus: all warnings being treated as errors
+[10.282s] make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+[10.282s] make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+[10.282s] make: *** [Makefile:146: all] Error 2
+[10.290s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': AMENT_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/ashmitha/ros_ws/install/msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

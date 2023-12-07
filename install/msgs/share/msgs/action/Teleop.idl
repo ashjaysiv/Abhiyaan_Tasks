@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from msgs/action/Teleop.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+
+module msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct Teleop_Goal {
+      builtin_interfaces::msg::Duration time;
+    };
+    module Teleop_Result_Constants {
+      const uint16 NONE = 0;
+      const uint16 TIMEOUT = 731;
+      const uint16 TF_ERROR = 732;
+    };
+    struct Teleop_Result {
+      builtin_interfaces::msg::Duration total_elapsed_time;
+
+      uint16 error_code;
+    };
+    struct Teleop_Feedback {
+      @verbatim (language="comment", text=
+        "feedback definition")
+      builtin_interfaces::msg::Duration time_left;
+    };
+  };
+};

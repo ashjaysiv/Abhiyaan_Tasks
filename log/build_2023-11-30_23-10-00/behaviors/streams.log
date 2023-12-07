@@ -1,0 +1,58 @@
+[0.131s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake /home/ashmitha/ros_ws/src/behaviors -DCMAKE_INSTALL_PREFIX=/home/ashmitha/ros_ws/install/behaviors
+[0.188s] -- The C compiler identification is GNU 9.4.0
+[0.237s] -- The CXX compiler identification is GNU 9.4.0
+[0.253s] -- Detecting C compiler ABI info
+[0.301s] -- Detecting C compiler ABI info - done
+[0.316s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.316s] -- Detecting C compile features
+[0.317s] -- Detecting C compile features - done
+[0.326s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.395s] -- Detecting CXX compile features
+[0.399s] -- Detecting CXX compile features - done
+[0.400s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.405s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.406s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.406s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.406s]   the cmake_policy command to set the policy and suppress this warning.
+[0.406s] 
+[0.406s] Call Stack (most recent call first):
+[0.406s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.406s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.406s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.406s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.406s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.406s]   CMakeLists.txt:19 (find_package)
+[0.406s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.406s] [0m
+[0.420s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3") 
+[0.420s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.582s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.673s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.675s] -- Added test 'lint_cmake' to check CMake code style
+[0.676s] -- Added test 'xmllint' to check XML markup files
+[0.677s] -- Configuring done (0.5s)
+[0.679s] -- Generating done (0.0s)
+[0.680s] -- Build files have been written to: /home/ashmitha/ros_ws/build/behaviors
+[0.688s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake /home/ashmitha/ros_ws/src/behaviors -DCMAKE_INSTALL_PREFIX=/home/ashmitha/ros_ws/install/behaviors
+[0.691s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.725s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.788s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/behaviors
+[0.809s] -- Install configuration: ""
+[0.809s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/ament_index/resource_index/package_run_dependencies/behaviors
+[0.809s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/ament_index/resource_index/parent_prefix_path/behaviors
+[0.809s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/environment/ament_prefix_path.sh
+[0.809s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/environment/ament_prefix_path.dsv
+[0.809s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/environment/path.sh
+[0.809s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/environment/path.dsv
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/local_setup.bash
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/local_setup.sh
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/local_setup.zsh
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/local_setup.dsv
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.dsv
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/ament_index/resource_index/packages/behaviors
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/cmake/behaviorsConfig.cmake
+[0.810s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/cmake/behaviorsConfig-version.cmake
+[0.811s] -- Installing: /home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.xml
+[0.860s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/behaviors

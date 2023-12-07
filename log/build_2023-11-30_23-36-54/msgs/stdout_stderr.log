@@ -1,0 +1,44 @@
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+Error processing idl file: /home/ashmitha/ros_ws/build/msgs/rosidl_adapter/msgs/action/Teleop.idl
+Traceback (most recent call last):
+  File "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 40, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+    return generate_cpp(
+           ^^^^^^^^^^^^^
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py", line 39, in generate_cpp
+    generate_files(
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 96, in generate_files
+    raise(e)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    expand_template(
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 131, in expand_template
+    em.BUFFERED_OPT: True,
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+Error processing idl file: /home/ashmitha/ros_ws/build/msgs/rosidl_adapter/msgs/action/Teleop.idl
+Traceback (most recent call last):
+  File "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 40, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main
+    return generate_c(
+           ^^^^^^^^^^^
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+    generate_files(
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 96, in generate_files
+    raise(e)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    expand_template(
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 131, in expand_template
+    em.BUFFERED_OPT: True,
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+make[2]: *** [CMakeFiles/msgs__cpp.dir/build.make:104: rosidl_generator_cpp/msgs/action/teleop.hpp] Error 1
+make[1]: *** [CMakeFiles/Makefile2:342: CMakeFiles/msgs__cpp.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/msgs__rosidl_generator_c.dir/build.make:94: rosidl_generator_c/msgs/action/teleop.h] Error 1
+make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/msgs__rosidl_generator_c.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

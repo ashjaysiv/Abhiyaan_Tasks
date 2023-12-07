@@ -1,0 +1,730 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:67:54:[m[K [01;31m[Kerror: [m[K‘[01m[KActionT[m[K’ was not declared in this scope; did you mean ‘[01m[KAction[m[K’?
+   67 |   using ActionServer = nav2_util::SimpleActionServer<[01;31m[KActionT[m[K>;
+      |                                                      [01;31m[K^~~~~~~[m[K
+      |                                                      [32m[KAction[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:67:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   67 |   using ActionServer = nav2_util::SimpleActionServer<ActionT[01;31m[K>[m[K;
+      |                                                             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   85 |   virtual ResultStatus onRun(const std::shared_ptr<const typename ActionT::Goal[01;31m[K>[m[K command) = 0;
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:36:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Kstd::shared_ptr[m[K’ without an argument list
+   85 |   virtual ResultStatus onRun(const [01;31m[Kstd[m[K::shared_ptr<const typename ActionT::Goal> command) = 0;
+      |                                    [01;31m[K^~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:36:[m[K [01;36m[Knote: [m[Kclass template argument deduction is only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:5[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:348:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+  348 |     class [01;36m[Kshared_ptr[m[K;
+      |           [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:85:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+   85 |   virtual ResultStatus onRun(const std::shared_ptr[01;31m[K<[m[Kconst typename ActionT::Goal> command) = 0;
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:108:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  108 |   virtual void onActionCompletion(std::shared_ptr<typename ActionT::Result[01;31m[K>[m[K/*result*/)
+      |                                                                           [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:108:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:108:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:108:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr[m[K’ is not a type
+  108 |   virtual void onActionCompletion(std::[01;31m[Kshared_ptr[m[K<typename ActionT::Result>/*result*/)
+      |                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:108:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+  108 |   virtual void onActionCompletion(std::shared_ptr[01;31m[K<[m[Ktypename ActionT::Result>/*result*/)
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:189:19:[m[K [01;31m[Kerror: [m[K‘[01m[KActionServer[m[K’ was not declared in this scope
+  189 |   std::shared_ptr<[01;31m[KActionServer[m[K> action_server_;
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:189:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  189 |   std::shared_ptr<ActionServer[01;31m[K>[m[K action_server_;
+      |                               [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<Action>::configure(const WeakPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:145:39:[m[K [01;31m[Kerror: [m[K‘[01m[KActionServer[m[K’ was not declared in this scope; did you mean ‘[01m[Kaction_server_[m[K’?
+  145 |     action_server_ = std::make_shared<[01;31m[KActionServer[m[K>(
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+      |                                       [32m[Kaction_server_[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<Action>::cleanup()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:161:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kreset[m[K’ in ‘[01m[K((nav2_behaviors::TimedBehavior<Action>*)this)->nav2_behaviors::TimedBehavior<Action>::action_server_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  161 |     action_server_.[01;31m[Kreset[m[K();
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<Action>::activate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:172:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  172 |     action_server_[01;31m[K->[m[Kactivate();
+      |                   [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<Action>::deactivate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:180:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  180 |     action_server_[01;31m[K->[m[Kdeactivate();
+      |                   [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<Action>::execute()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:222:24:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  222 |     auto result = std::[01;31m[Kmake_shared<typename ActionT::Result>[m[K();
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:224:54:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  224 |     ResultStatus on_run_result = onRun(action_server_[01;31m[K->[m[Kget_current_goal());
+      |                                                      [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:230:21:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  230 |       action_server_[01;31m[K->[m[Kterminate_current(result);
+      |                     [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:239:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  239 |       if (action_server_[01;31m[K->[m[Kis_cancel_requested()) {
+      |                         [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:244:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  244 |         action_server_[01;31m[K->[m[Kterminate_all(result);
+      |                       [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:249:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  249 |       if (action_server_[01;31m[K->[m[Kis_preempt_requested()) {
+      |                         [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:257:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  257 |         action_server_[01;31m[K->[m[Kterminate_current(result);
+      |                       [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:269:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  269 |           action_server_[01;31m[K->[m[Ksucceeded_current(result);
+      |                         [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:277:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  277 |           action_server_[01;31m[K->[m[Kterminate_current(result);
+      |                         [01;31m[K^~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:20:40:[m[K [01;31m[Kerror: [m[Kexpected template-name before ‘[01m[K<[m[K’ token
+   20 |     class Teleop : public TimedBehavior[01;31m[K<[m[KTeleopAction>
+      |                                        [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:20:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K<[m[K’ token
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:20:40:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K<[m[K’ token
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ does not name a type
+   12 |     [01;31m[KTeleop[m[K::Teleop()
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+   16 |     int [01;31m[KTeleop[m[K::getch(void)
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In function ‘[01m[Kint nav2_behaviors::getch()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:19:24:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[Knav2_behaviors::getch()::termios oldt[m[K’ has incomplete type and cannot be defined
+   19 |         struct termios [01;31m[Koldt[m[K;
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:20:24:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[Knav2_behaviors::getch()::termios newt[m[K’ has incomplete type and cannot be defined
+   20 |         struct termios [01;31m[Knewt[m[K;
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:23:19:[m[K [01;31m[Kerror: [m[K‘[01m[KSTDIN_FILENO[m[K’ was not declared in this scope
+   23 |         tcgetattr([01;31m[KSTDIN_FILENO[m[K, &oldt);
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcgetattr[m[K’ was not declared in this scope
+   23 |         [01;31m[Ktcgetattr[m[K(STDIN_FILENO, &oldt);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:27:27:[m[K [01;31m[Kerror: [m[K‘[01m[KICANON[m[K’ was not declared in this scope
+   27 |         newt.c_lflag &= ~([01;31m[KICANON[m[K | ECHO);
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:27:36:[m[K [01;31m[Kerror: [m[K‘[01m[KECHO[m[K’ was not declared in this scope
+   27 |         newt.c_lflag &= ~(ICANON | [01;31m[KECHO[m[K);
+      |                                    [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[KIGNBRK[m[K’ was not declared in this scope
+   28 |         newt.c_iflag |= [01;31m[KIGNBRK[m[K;
+      |                         [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:29:27:[m[K [01;31m[Kerror: [m[K‘[01m[KINLCR[m[K’ was not declared in this scope
+   29 |         newt.c_iflag &= ~([01;31m[KINLCR[m[K | ICRNL | IXON | IXOFF);
+      |                           [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:29:35:[m[K [01;31m[Kerror: [m[K‘[01m[KICRNL[m[K’ was not declared in this scope
+   29 |         newt.c_iflag &= ~(INLCR | [01;31m[KICRNL[m[K | IXON | IXOFF);
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:29:43:[m[K [01;31m[Kerror: [m[K‘[01m[KIXON[m[K’ was not declared in this scope
+   29 |         newt.c_iflag &= ~(INLCR | ICRNL | [01;31m[KIXON[m[K | IXOFF);
+      |                                           [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:29:50:[m[K [01;31m[Kerror: [m[K‘[01m[KIXOFF[m[K’ was not declared in this scope
+   29 |         newt.c_iflag &= ~(INLCR | ICRNL | IXON | [01;31m[KIXOFF[m[K);
+      |                                                  [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:30:43:[m[K [01;31m[Kerror: [m[K‘[01m[KECHOK[m[K’ was not declared in this scope
+   30 |         newt.c_lflag &= ~(ICANON | ECHO | [01;31m[KECHOK[m[K | ECHOE | ECHONL | ISIG | IEXTEN);
+      |                                           [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:30:51:[m[K [01;31m[Kerror: [m[K‘[01m[KECHOE[m[K’ was not declared in this scope
+   30 |         newt.c_lflag &= ~(ICANON | ECHO | ECHOK | [01;31m[KECHOE[m[K | ECHONL | ISIG | IEXTEN);
+      |                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:30:59:[m[K [01;31m[Kerror: [m[K‘[01m[KECHONL[m[K’ was not declared in this scope; did you mean ‘[01m[KECHRNG[m[K’?
+   30 |         newt.c_lflag &= ~(ICANON | ECHO | ECHOK | ECHOE | [01;31m[KECHONL[m[K | ISIG | IEXTEN);
+      |                                                           [01;31m[K^~~~~~[m[K
+      |                                                           [32m[KECHRNG[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:30:68:[m[K [01;31m[Kerror: [m[K‘[01m[KISIG[m[K’ was not declared in this scope; did you mean ‘[01m[KNSIG[m[K’?
+   30 |         newt.c_lflag &= ~(ICANON | ECHO | ECHOK | ECHOE | ECHONL | [01;31m[KISIG[m[K | IEXTEN);
+      |                                                                    [01;31m[K^~~~[m[K
+      |                                                                    [32m[KNSIG[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:30:75:[m[K [01;31m[Kerror: [m[K‘[01m[KIEXTEN[m[K’ was not declared in this scope
+   30 |         newt.c_lflag &= ~(ICANON | ECHO | ECHOK | ECHOE | ECHONL | ISIG | [01;31m[KIEXTEN[m[K);
+      |                                                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:31:19:[m[K [01;31m[Kerror: [m[K‘[01m[KVMIN[m[K’ was not declared in this scope
+   31 |         newt.c_cc[[01;31m[KVMIN[m[K] = 1;
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:32:19:[m[K [01;31m[Kerror: [m[K‘[01m[KVTIME[m[K’ was not declared in this scope; did you mean ‘[01m[KETIME[m[K’?
+   32 |         newt.c_cc[[01;31m[KVTIME[m[K] = 0;
+      |                   [01;31m[K^~~~~[m[K
+      |                   [32m[KETIME[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:33:34:[m[K [01;31m[Kerror: [m[K‘[01m[KTCSANOW[m[K’ was not declared in this scope
+   33 |         tcsetattr(fileno(stdin), [01;31m[KTCSANOW[m[K, &newt);
+      |                                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcsetattr[m[K’ was not declared in this scope
+   33 |         [01;31m[Ktcsetattr[m[K(fileno(stdin), TCSANOW, &newt);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:46:11:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+   46 |     float [01;31m[KTeleop[m[K::vel_check(float curr, bool decrease = false)
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:56:11:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+   56 |     float [01;31m[KTeleop[m[K::Lvel(char key, float x)
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:65:11:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+   65 |     float [01;31m[KTeleop[m[K::Avel(char key, float th){
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:75:10:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+   75 |     void [01;31m[KTeleop[m[K::onConfigure()
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In function ‘[01m[Kvoid nav2_behaviors::onConfigure()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:151:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  151 |         printf("\nNow top Speed is %f and turn is %f | Last command: \n", [01;31m[Kspeed[m[K, turn);
+      |                                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:151:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  151 |         printf("\nNow top Speed is %f and turn is %f | Last command: \n", speed, [01;31m[Kturn[m[K);
+      |                                                                                  [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:154:21:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Knode[m[K’?
+  154 |         auto node = [01;31m[Knode_[m[K.lock();
+      |                     [01;31m[K^~~~~[m[K
+      |                     [32m[Knode[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:162:38:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+  162 |             "projection_time", rclcpp[01;31m[K:[m[KParameterValue(1.0)
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[K::[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:167:43:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+  167 |             "simulation_time_step", rclcpp[01;31m[K:[m[KParameterValue(0.1)
+      |                                           [01;31m[K^[m[K
+      |                                           [32m[K::[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:172:37:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+  172 |             "cmd_vel_teleop", rclcpp[01;31m[K:[m[KParameterValue(std::string("cmd_vel_teleop"))
+      |                                     [01;31m[K^[m[K
+      |                                     [32m[K::[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:176:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kprojection_time_[m[K’ was not declared in this scope
+  176 |         node->get_parameter("projection_time", [01;31m[Kprojection_time_[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:177:53:[m[K [01;31m[Kerror: [m[K‘[01m[Ksimulation_time_step_[m[K’ was not declared in this scope
+  177 |         node->get_parameter("simulation_time_step", [01;31m[Ksimulation_time_step_[m[K);
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:182:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_pub_[m[K’ was not declared in this scope
+  182 |         [01;31m[Kvel_pub_[m[K = node->create_publisher<geometry_msgs::msg::Twist>(
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:182:68:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  182 |         vel_pub_ = node->create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K(
+      |                                                                    [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:183:13:[m[K [01;31m[Kerror: [m[Kleft operand of comma operator has no effect [[01;31m[K-Werror=unused-value[m[K]
+  183 |             [01;31m[Kcmd_vel_teleop[m[K, rclcpp::SystemDefaultsQoS(),
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:185:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+  185 |                 &[01;31m[KTeleop[m[K::teleopVelocityCallback, this, std::placeholders::_1
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:185:50:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  185 |                 &Teleop::teleopVelocityCallback, [01;31m[Kthis[m[K, std::placeholders::_1
+      |                                                  [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:188:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreempt_teleop_sub_[m[K’ was not declared in this scope
+  188 |         [01;31m[Kpreempt_teleop_sub_[m[K = node->create_subscription<std_msgs::msg::Empty>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:188:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  188 |         preempt_teleop_sub_ = node->create_subscription<std_msgs::msg::Empty[01;31m[K>[m[K(
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:189:13:[m[K [01;31m[Kerror: [m[Kleft operand of comma operator has no effect [[01;31m[K-Werror=unused-value[m[K]
+  189 |             [01;31m[K"preempt_teleop"[m[K, rclcpp::SystemDefaultsQoS(),
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:191:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+  191 |                 &[01;31m[KTeleop[m[K::premeptTeleopCallback, this, std::placeholders::_1
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:191:49:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  191 |                 &Teleop::premeptTeleopCallback, [01;31m[Kthis[m[K, std::placeholders::_1
+      |                                                 [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+  196 |     ResultStatus [01;31m[KTeleop[m[K::onRun(const std::shared_ptr<const TeleopAction::Goal> command)
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:72:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction[01;31m[K::[m[KGoal> command)
+      |                                                                        [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction::Goal[01;31m[K>[m[K command)
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:72:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction[01;31m[K::[m[KGoal> command)
+      |                                                                        [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction::Goal[01;31m[K>[m[K command)
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:72:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction[01;31m[K::[m[KGoal> command)
+      |                                                                        [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction::Goal[01;31m[K>[m[K command)
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:72:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction[01;31m[K::[m[KGoal> command)
+      |                                                                        [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction::Goal[01;31m[K>[m[K command)
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:72:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction[01;31m[K::[m[KGoal> command)
+      |                                                                        [01;31m[K^~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr<const TeleopAction::Goal[01;31m[K>[m[K command)
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:38:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Kstd::shared_ptr[m[K’ without an argument list
+  196 |     ResultStatus Teleop::onRun(const [01;31m[Kstd[m[K::shared_ptr<const TeleopAction::Goal> command)
+      |                                      [01;31m[K^~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:38:[m[K [01;36m[Knote: [m[Kclass template argument deduction is only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
+In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:5[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:348:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+  348 |     class [01;36m[Kshared_ptr[m[K;
+      |           [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:196:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+  196 |     ResultStatus Teleop::onRun(const std::shared_ptr[01;31m[K<[m[Kconst TeleopAction::Goal> command)
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In function ‘[01m[Knav2_behaviors::ResultStatus nav2_behaviors::onRun(int)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:198:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreempt_teleop_[m[K’ was not declared in this scope
+  198 |         [01;31m[Kpreempt_teleop_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:199:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_time_allowance_[m[K’ was not declared in this scope
+  199 |         [01;31m[Kcommand_time_allowance_[m[K = command->time_allowance;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:199:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+  199 |         command_time_allowance_ = [01;31m[Kcommand[m[K->time_allowance;
+      |                                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:200:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kend_time_[m[K’ was not declared in this scope
+  200 |         [01;31m[Kend_time_[m[K = steady_clock_.now() + command_time_allowance_;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:200:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteady_clock_[m[K’ was not declared in this scope
+  200 |         end_time_ = [01;31m[Ksteady_clock_[m[K.now() + command_time_allowance_;
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:201:48:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ was not declared in this scope
+  201 |         return ResultStatus{Status::SUCCEEDED, [01;31m[KTeleopActionResult[m[K::NONE};
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:201:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+  201 |         return ResultStatus[01;31m[K{[m[KStatus::SUCCEEDED, TeleopActionResult::NONE};
+      |                            [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:201:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+  201 |         return ResultStatus[01;31m[K{[m[KStatus::SUCCEEDED, TeleopActionResult::NONE};
+      |                            [01;31m[K^[m[K
+      |                            [32m[K;[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:201:48:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ is not a class, namespace, or enumeration
+  201 |         return ResultStatus{Status::SUCCEEDED, [01;31m[KTeleopActionResult[m[K::NONE};
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:204:10:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+  204 |     void [01;31m[KTeleop[m[K::onActionCompletion(std::shared_ptr<TeleopActionResult>/*result*/)
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:204:53:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ was not declared in this scope
+  204 |     void Teleop::onActionCompletion(std::shared_ptr<[01;31m[KTeleopActionResult[m[K>/*result*/)
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:204:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  204 |     void Teleop::onActionCompletion(std::shared_ptr<TeleopActionResult[01;31m[K>[m[K/*result*/)
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In function ‘[01m[Kvoid nav2_behaviors::onActionCompletion(int)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:206:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kteleop_twist_[m[K’ was not declared in this scope
+  206 |         [01;31m[Kteleop_twist_[m[K = geometry_msgs::msg::Twist();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:207:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreempt_teleop_[m[K’ was not declared in this scope
+  207 |         [01;31m[Kpreempt_teleop_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:210:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+  210 |     ResultStatus [01;31m[KTeleop[m[K::onCycleUpdate()
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In constructor ‘[01m[Kbehavior_server::BehaviorServer::BehaviorServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:32:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_util::LifecycleNode::LifecycleNode(const char [16], const char [1], const rclcpp::NodeOptions&)[m[K’
+   32 |     "nav2_behaviors/Wait"[01;31m[K}[m[K
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:21[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/opt/ros/foxy/include/nav2_util/lifecycle_node.hpp:39:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_util::LifecycleNode::LifecycleNode(const string&, const string&, bool, const rclcpp::NodeOptions&)[m[K’
+   39 |   [01;36m[KLifecycleNode[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_util/lifecycle_node.hpp:42:10:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst rclcpp::NodeOptions[m[K’ to ‘[01m[Kbool[m[K’
+   42 |     [01;36m[Kbool use_rclcpp_node = false[m[K,
+      |     [01;36m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In function ‘[01m[Knav2_behaviors::ResultStatus nav2_behaviors::onCycleUpdate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:212:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_[m[K’ was not declared in this scope
+  212 |         [01;31m[Kfeedback_[m[K->current_teleop_duration = elasped_time_;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:212:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kelasped_time_[m[K’ was not declared in this scope
+  212 |         feedback_->current_teleop_duration = [01;31m[Kelasped_time_[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:213:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+  213 |         [01;31m[Kaction_server_[m[K->publish_feedback(feedback_);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krcl_action_server_t[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:215:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kend_time_[m[K’ was not declared in this scope
+  215 |         rclcpp::Duration time_remaining = [01;31m[Kend_time_[m[K - steady_clock_.now();
+      |                                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:215:55:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteady_clock_[m[K’ was not declared in this scope
+  215 |         rclcpp::Duration time_remaining = end_time_ - [01;31m[Ksteady_clock_[m[K.now();
+      |                                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:219:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kkey[m[K’ was not declared in this scope; did you mean ‘[01m[Kkey_t[m[K’?
+  219 |         [01;31m[Kkey[m[K = getch();
+      |         [01;31m[K^~~[m[K
+      |         [32m[Kkey_t[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:222:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+  222 |             [01;31m[Kx[m[K = Lvel(key, x);
+      |             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:223:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  223 |             [01;31m[Ky[m[K = 0.0;
+      |             [01;31m[K^[m[K
+      |             [32m[Kyn[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:224:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  224 |             [01;31m[Kz[m[K = 0.0;
+      |             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:225:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  225 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", [01;31m[Kspeed[m[K*x, turn*th, key);
+      |                                                                          [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:225:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  225 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*x, [01;31m[Kturn[m[K*th, key);
+      |                                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:225:88:[m[K [01;31m[Kerror: [m[K‘[01m[Kth[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  225 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*x, turn*[01;31m[Kth[m[K, key);
+      |                                                                                        [01;31m[K^~[m[K
+      |                                                                                        [32m[Ktm[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:231:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kth[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  231 |             [01;31m[Kth[m[K = Avel(key,th);
+      |             [01;31m[K^~[m[K
+      |             [32m[Ktm[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:232:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  232 |             [01;31m[Ky[m[K = 0.0;
+      |             [01;31m[K^[m[K
+      |             [32m[Kyn[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:233:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  233 |             [01;31m[Kz[m[K = 0.0;
+      |             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:234:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  234 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", [01;31m[Kspeed[m[K*x, turn*th, key);
+      |                                                                          [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:234:80:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+  234 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*[01;31m[Kx[m[K, turn*th, key);
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:234:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  234 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*x, [01;31m[Kturn[m[K*th, key);
+      |                                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:237:18:[m[K [01;31m[Kerror: [m[K‘[01m[KmoveBindings[m[K’ was not declared in this scope
+  237 |         else if ([01;31m[KmoveBindings[m[K.count(key) == 1)
+      |                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:240:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+  240 |             [01;31m[Kx[m[K = moveBindings[key][0];
+      |             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:241:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  241 |             [01;31m[Ky[m[K = moveBindings[key][1];
+      |             [01;31m[K^[m[K
+      |             [32m[Kyn[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:242:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  242 |             [01;31m[Kz[m[K = moveBindings[key][2];
+      |             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kth[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  243 |             [01;31m[Kth[m[K = moveBindings[key][3];
+      |             [01;31m[K^~[m[K
+      |             [32m[Ktm[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:245:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  245 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", [01;31m[Kspeed[m[K, turn, key);
+      |                                                                          [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:245:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  245 |             printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed, [01;31m[Kturn[m[K, key);
+      |                                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:248:18:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedBindings[m[K’ was not declared in this scope
+  248 |         else if ([01;31m[KspeedBindings[m[K.count(key) == 1)
+      |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:251:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  251 |             [01;31m[Kspeed[m[K = speed * speedBindings[key][0];
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:252:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  252 |             [01;31m[Kturn[m[K = turn * speedBindings[key][1];
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:262:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+  262 |                 [01;31m[Kx[m[K = 0;
+      |                 [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:263:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  263 |                 [01;31m[Ky[m[K = 0;
+      |                 [01;31m[K^[m[K
+      |                 [32m[Kyn[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:264:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  264 |                 [01;31m[Kz[m[K = 0;
+      |                 [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:265:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kth[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  265 |                 [01;31m[Kth[m[K = 0;
+      |                 [01;31m[K^~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:267:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  267 |                 printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", [01;31m[Kspeed[m[K*x, turn*th, key);
+      |                                                                              [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In member function ‘[01m[Kvirtual nav2_util::CallbackReturn behavior_server::BehaviorServer::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:203:3:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateBond[m[K’ was not declared in this scope
+  203 |   [01;31m[KcreateBond[m[K();
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:267:87:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  267 |                 printf("\rCurrent: speed %f\tturn %f | Last command: %c   ", speed*x, [01;31m[Kturn[m[K*th, key);
+      |                                                                                       [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:272:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+  272 |         twist.linear.x = [01;31m[Kx[m[K * speed;
+      |                          [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:272:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed[m[K’ was not declared in this scope
+  272 |         twist.linear.x = x * [01;31m[Kspeed[m[K;
+      |                              [01;31m[K^~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:273:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  273 |         twist.linear.y = [01;31m[Ky[m[K * speed;
+      |                          [01;31m[K^[m[K
+      |                          [32m[Kyn[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:274:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  274 |         twist.linear.z = [01;31m[Kz[m[K * speed;
+      |                          [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:278:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kth[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  278 |         twist.angular.z = [01;31m[Kth[m[K * turn;
+      |                           [01;31m[K^~[m[K
+      |                           [32m[Ktm[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In member function ‘[01m[Kvirtual nav2_util::CallbackReturn behavior_server::BehaviorServer::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:219:3:[m[K [01;31m[Kerror: [m[K‘[01m[KdestroyBond[m[K’ was not declared in this scope
+  219 |   [01;31m[KdestroyBond[m[K();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:278:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn[m[K’ was not declared in this scope
+  278 |         twist.angular.z = th * [01;31m[Kturn[m[K;
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:283:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_time_allowance_[m[K’ was not declared in this scope
+  283 |         if (time_remaining.seconds() < 0.0 && [01;31m[Kcommand_time_allowance_[m[K.seconds() > 0.0)
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:285:13:[m[K [01;31m[Kerror: [m[K‘[01m[KstopRobot[m[K’ was not declared in this scope
+  285 |             [01;31m[KstopRobot[m[K();
+      |             [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:28[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:287:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  287 |             [01;31m[Klogger_[m[K,
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:286:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  286 |             [01;31m[KRCLCPP_WARN_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:286:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  286 |             [01;31m[KRCLCPP_WARN_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:286:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  286 |             [01;31m[KRCLCPP_WARN_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:288:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kbehavior_name_[m[K’ was not declared in this scope
+  288 |             "Exceeded time allowance before reaching the " << [01;31m[Kbehavior_name_[m[K.c_str() <<
+      |                                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:290:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ was not declared in this scope
+  290 |             return ResultStatus{Status::FAILED, [01;31m[KTeleopActionResult[m[K::TIMEOUT};
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:290:32:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+  290 |             return ResultStatus[01;31m[K{[m[KStatus::FAILED, TeleopActionResult::TIMEOUT};
+      |                                [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:290:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+  290 |             return ResultStatus[01;31m[K{[m[KStatus::FAILED, TeleopActionResult::TIMEOUT};
+      |                                [01;31m[K^[m[K
+      |                                [32m[K;[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:290:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ is not a class, namespace, or enumeration
+  290 |             return ResultStatus{Status::FAILED, [01;31m[KTeleopActionResult[m[K::TIMEOUT};
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:293:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreempt_teleop_[m[K’ was not declared in this scope
+  293 |         if ([01;31m[Kpreempt_teleop_[m[K)
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:295:13:[m[K [01;31m[Kerror: [m[K‘[01m[KstopRobot[m[K’ was not declared in this scope
+  295 |             [01;31m[KstopRobot[m[K();
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:296:52:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ was not declared in this scope
+  296 |             return ResultStatus{Status::SUCCEEDED, [01;31m[KTeleopActionResult[m[K::NONE};
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:296:32:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+  296 |             return ResultStatus[01;31m[K{[m[KStatus::SUCCEEDED, TeleopActionResult::NONE};
+      |                                [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:296:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+  296 |             return ResultStatus[01;31m[K{[m[KStatus::SUCCEEDED, TeleopActionResult::NONE};
+      |                                [01;31m[K^[m[K
+      |                                [32m[K;[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:296:52:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ is not a class, namespace, or enumeration
+  296 |             return ResultStatus{Status::SUCCEEDED, [01;31m[KTeleopActionResult[m[K::NONE};
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:301:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf2[m[K’?
+  301 |             current_pose, *[01;31m[Ktf_[m[K, local_frame_, robot_base_frame_,
+      |                            [01;31m[K^~~[m[K
+      |                            [32m[Ktf2[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:301:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_frame_[m[K’ was not declared in this scope
+  301 |             current_pose, *tf_, [01;31m[Klocal_frame_[m[K, robot_base_frame_,
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:301:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_base_frame_[m[K’ was not declared in this scope
+  301 |             current_pose, *tf_, local_frame_, [01;31m[Krobot_base_frame_[m[K,
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:302:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_tolerance_[m[K’ was not declared in this scope
+  302 |             [01;31m[Ktransform_tolerance_[m[K))
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:28[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:305:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  305 |             [01;31m[Klogger_[m[K,
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:304:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  304 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:304:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  304 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:304:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  304 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:307:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbehavior_name_[m[K’ was not declared in this scope
+  307 |                 [01;31m[Kbehavior_name_[m[K.c_str());
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:308:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ was not declared in this scope
+  308 |             return ResultStatus{Status::FAILED, [01;31m[KTeleopActionResult[m[K::TF_ERROR};
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:308:32:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+  308 |             return ResultStatus[01;31m[K{[m[KStatus::FAILED, TeleopActionResult::TF_ERROR};
+      |                                [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:308:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+  308 |             return ResultStatus[01;31m[K{[m[KStatus::FAILED, TeleopActionResult::TF_ERROR};
+      |                                [01;31m[K^[m[K
+      |                                [32m[K;[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:308:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ is not a class, namespace, or enumeration
+  308 |             return ResultStatus{Status::FAILED, [01;31m[KTeleopActionResult[m[K::TF_ERROR};
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:311:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_pub_[m[K’ was not declared in this scope
+  311 |         [01;31m[Kvel_pub_[m[K->publish(std::move(twist));
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:313:46:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ was not declared in this scope
+  313 |         return ResultStatus{Status::RUNNING, [01;31m[KTeleopActionResult[m[K::NONE};
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:313:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K{[m[K’ token
+  313 |         return ResultStatus[01;31m[K{[m[KStatus::RUNNING, TeleopActionResult::NONE};
+      |                            [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:313:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+  313 |         return ResultStatus[01;31m[K{[m[KStatus::RUNNING, TeleopActionResult::NONE};
+      |                            [01;31m[K^[m[K
+      |                            [32m[K;[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:313:46:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleopActionResult[m[K’ is not a class, namespace, or enumeration
+  313 |         return ResultStatus{Status::RUNNING, [01;31m[KTeleopActionResult[m[K::NONE};
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:316:10:[m[K [01;31m[Kerror: [m[K‘[01m[KTeleop[m[K’ has not been declared
+  316 |     void [01;31m[KTeleop[m[K::preemptTeleopCallback(const std_msgs::msg::Empty::SharedPtr)
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In function ‘[01m[Kvoid nav2_behaviors::preemptTeleopCallback(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:318:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreempt_teleop_[m[K’ was not declared in this scope
+  318 |         [01;31m[Kpreempt_teleop_[m[K = true;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:323[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kbehaviors[m[K’ does not name a type; did you mean ‘[01m[Knav2_behaviors[m[K’?
+  324 | PLUGINLIB_EXPORT_CLASS([01;31m[Kbehaviors[m[K::Teleop, nav2_core::Behavior)
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+  324 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Behavior)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [18], const char [20])[m[K’
+  324 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Behavior)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:323[m[K:
+[01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+  210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:323[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  324 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Behavior)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:15[m[K:
+/usr/include/c++/9/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = nav2_costmap_2d::FootprintSubscriber; _Args = {std::shared_ptr<nav2_util::LifecycleNode>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, tf2_ros::Buffer&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, double&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<nav2_costmap_2d::FootprintSubscriber>][m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:175:93:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:857:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(std::shared_ptr<nav2_util::LifecycleNode>, std::__cxx11::basic_string<char>&, tf2_ros::Buffer&, std::__cxx11::basic_string<char>&, double&)[m[K’
+  857 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:31[m[K,
+                 from [01m[K/opt/ros/foxy/include/nav2_core/behavior.hpp:24[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:26[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:41:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeTopicsInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, const string&, const double&)[m[K’
+   41 |   [01;36m[KFootprintSubscriber[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:41:3:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 5 provided
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:36:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(rclcpp::Node::SharedPtr, const string&, const double&)[m[K’
+   36 |   [01;36m[KFootprintSubscriber[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:36:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 5 provided
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:31:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(rclcpp_lifecycle::LifecycleNode::SharedPtr, const string&, const double&)[m[K’
+   31 |   [01;36m[KFootprintSubscriber[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:31:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 5 provided
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:28:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(const nav2_costmap_2d::FootprintSubscriber&)[m[K’
+   28 | class [01;36m[KFootprintSubscriber[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:28:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/9/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/9/memory:63[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:15[m[K:
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = nav2_costmap_2d::CostmapTopicCollisionChecker; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker][m[K’:
+[01m[K/usr/include/c++/9/bits/alloc_traits.h:483:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = nav2_costmap_2d::CostmapTopicCollisionChecker; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:359:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:701:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:717:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}][m[K’
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:178:61:[m[K   required from here
+[01m[K/usr/include/c++/9/ext/new_allocator.h:146:4:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_costmap_2d::CostmapTopicCollisionChecker::CostmapTopicCollisionChecker(nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*)[m[K’
+  146 |  { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav2_core/behavior.hpp:24[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:26[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:44:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::CostmapTopicCollisionChecker::CostmapTopicCollisionChecker(nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, tf2_ros::Buffer&, std::string, std::string, std::string, double)[m[K’
+   44 |   [01;36m[KCostmapTopicCollisionChecker[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:47:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ktf2_ros::Buffer&[m[K’
+   47 |     [01;36m[Ktf2_ros::Buffer & tf[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:41:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::CostmapTopicCollisionChecker::CostmapTopicCollisionChecker(const nav2_costmap_2d::CostmapTopicCollisionChecker&)[m[K’
+   41 | class [01;36m[KCostmapTopicCollisionChecker[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:41:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

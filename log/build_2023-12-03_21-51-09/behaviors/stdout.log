@@ -1,0 +1,5 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[ 50%] Built target behavior_server_core
+[ 66%] [32mBuilding CXX object CMakeFiles/behavior_server.dir/src/main.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable behavior_server[0m
+[ 83%] Built target behavior_server

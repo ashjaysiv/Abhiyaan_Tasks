@@ -1,0 +1,30 @@
+[0.085s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[0.115s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.115s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.159s] Traceback (most recent call last):
+[0.159s]   File "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>
+[0.159s]     from rosidl_generator_cpp import generate_cpp
+[0.159s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>
+[0.159s]     from rosidl_cmake import generate_files
+[0.159s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[0.159s]     from rosidl_parser.parser import parse_idl_file
+[0.159s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 20, in <module>
+[0.159s]     from lark import Lark
+[0.159s] ModuleNotFoundError: No module named 'lark'
+[0.159s] Traceback (most recent call last):
+[0.159s]   File "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>
+[0.159s]     from rosidl_generator_c import generate_c
+[0.160s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_c/__init__.py", line 15, in <module>
+[0.160s]     from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+[0.160s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[0.160s]     from rosidl_parser.parser import parse_idl_file
+[0.160s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 20, in <module>
+[0.160s]     from lark import Lark
+[0.160s] ModuleNotFoundError: No module named 'lark'
+[0.165s] make[2]: *** [CMakeFiles/msgs__cpp.dir/build.make:104: rosidl_generator_cpp/msgs/action/teleop.hpp] Error 1
+[0.165s] make[1]: *** [CMakeFiles/Makefile2:342: CMakeFiles/msgs__cpp.dir/all] Error 2
+[0.165s] make[1]: *** Waiting for unfinished jobs....
+[0.165s] make[2]: *** [CMakeFiles/msgs__rosidl_generator_c.dir/build.make:94: rosidl_generator_c/msgs/action/teleop.h] Error 1
+[0.165s] make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/msgs__rosidl_generator_c.dir/all] Error 2
+[0.165s] make: *** [Makefile:146: all] Error 2
+[0.182s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8

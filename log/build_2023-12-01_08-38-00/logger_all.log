@@ -1,0 +1,362 @@
+[1.899s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.899s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f33734a9d00>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f33734a9d00>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f33730a7d90>)
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.965s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.965s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ashmitha/ros_ws'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extensions ['ignore', 'ignore_ament_install']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extension 'ignore'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extension 'ignore_ament_install'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extensions ['colcon_pkg']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extension 'colcon_pkg'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extensions ['colcon_meta']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extension 'colcon_meta'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extensions ['ros']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/behavior_trees) by extension 'ros'
+[1.978s] DEBUG:colcon.colcon_core.package_identification:Package 'src/behavior_trees' with type 'ros.ament_cmake' and name 'behavior_trees'
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extensions ['ignore', 'ignore_ament_install']
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extension 'ignore'
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extension 'ignore_ament_install'
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extensions ['colcon_pkg']
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extension 'colcon_pkg'
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extensions ['colcon_meta']
+[1.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extension 'colcon_meta'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extensions ['ros']
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/behaviors) by extension 'ros'
+[1.979s] DEBUG:colcon.colcon_core.package_identification:Package 'src/behaviors' with type 'ros.ament_cmake' and name 'behaviors'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'ignore'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'ignore_ament_install'
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['colcon_pkg']
+[1.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'colcon_pkg'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['colcon_meta']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'colcon_meta'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extensions ['ros']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/msgs) by extension 'ros'
+[1.980s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msgs' with type 'ros.ament_cmake' and name 'msgs'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extensions ['ignore', 'ignore_ament_install']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extension 'ignore'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extension 'ignore_ament_install'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extensions ['colcon_pkg']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extension 'colcon_pkg'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extensions ['colcon_meta']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extension 'colcon_meta'
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extensions ['ros']
+[1.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_test_utils) by extension 'ros'
+[1.981s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2_test_utils' with type 'ros.ament_cmake' and name 'nav2_test_utils'
+[1.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.981s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.054s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 298 installed packages in /opt/ros/foxy
+[2.055s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'cmake_args' from command line to 'None'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'cmake_target' from command line to 'None'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'cmake_clean_cache' from command line to 'False'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'cmake_clean_first' from command line to 'False'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'cmake_force_configure' from command line to 'False'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'ament_cmake_args' from command line to 'None'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'catkin_cmake_args' from command line to 'None'
+[2.102s] Level 5:colcon.colcon_core.verb:set package 'behavior_trees' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.102s] DEBUG:colcon.colcon_core.verb:Building package 'behavior_trees' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmitha/ros_ws/build/behavior_trees', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmitha/ros_ws/install/behavior_trees', 'merge_install': False, 'path': '/home/ashmitha/ros_ws/src/behavior_trees', 'symlink_install': False, 'test_result_base': None}
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'cmake_args' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'cmake_target' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'cmake_clean_cache' from command line to 'False'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'cmake_clean_first' from command line to 'False'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'cmake_force_configure' from command line to 'False'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'ament_cmake_args' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'catkin_cmake_args' from command line to 'None'
+[2.111s] Level 5:colcon.colcon_core.verb:set package 'behaviors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.111s] DEBUG:colcon.colcon_core.verb:Building package 'behaviors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmitha/ros_ws/build/behaviors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmitha/ros_ws/install/behaviors', 'merge_install': False, 'path': '/home/ashmitha/ros_ws/src/behaviors', 'symlink_install': False, 'test_result_base': None}
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'cmake_args' from command line to 'None'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'cmake_target' from command line to 'None'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.119s] Level 5:colcon.colcon_core.verb:set package 'msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.120s] DEBUG:colcon.colcon_core.verb:Building package 'msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmitha/ros_ws/build/msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmitha/ros_ws/install/msgs', 'merge_install': False, 'path': '/home/ashmitha/ros_ws/src/msgs', 'symlink_install': False, 'test_result_base': None}
+[2.127s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'cmake_args' from command line to 'None'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'cmake_target' from command line to 'None'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'cmake_clean_first' from command line to 'False'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'cmake_force_configure' from command line to 'False'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'ament_cmake_args' from command line to 'None'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[2.128s] Level 5:colcon.colcon_core.verb:set package 'nav2_test_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.128s] DEBUG:colcon.colcon_core.verb:Building package 'nav2_test_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmitha/ros_ws/build/nav2_test_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmitha/ros_ws/install/nav2_test_utils', 'merge_install': False, 'path': '/home/ashmitha/ros_ws/src/nav2_test_utils', 'symlink_install': False, 'test_result_base': None}
+[2.136s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.145s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.145s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmitha/ros_ws/src/behavior_trees' with build type 'ament_cmake'
+[2.145s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmitha/ros_ws/src/behavior_trees'
+[2.155s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.155s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.155s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.175s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmitha/ros_ws/src/behaviors' with build type 'ament_cmake'
+[2.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmitha/ros_ws/src/behaviors'
+[2.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.204s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmitha/ros_ws/src/msgs' with build type 'ament_cmake'
+[2.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmitha/ros_ws/src/msgs'
+[2.222s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.222s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.241s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmitha/ros_ws/src/nav2_test_utils' with build type 'ament_cmake'
+[2.242s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmitha/ros_ws/src/nav2_test_utils'
+[2.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/behavior_trees': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behavior_trees -- -j8 -l8
+[2.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[2.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[2.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+[2.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/behavior_trees' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behavior_trees -- -j8 -l8
+[2.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[2.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/nav2_test_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+[2.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/behavior_trees': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/behavior_trees
+[2.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/behaviors
+[2.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/nav2_test_utils
+[2.388s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behavior_trees)
+[2.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/behavior_trees' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/behavior_trees
+[2.401s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees' for CMake module files
+[2.402s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees' for CMake config files
+[2.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('behavior_trees', 'cmake_prefix_path')
+[2.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/hook/cmake_prefix_path.ps1'
+[2.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/hook/cmake_prefix_path.dsv'
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/hook/cmake_prefix_path.sh'
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/bin'
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/lib/pkgconfig/behavior_trees.pc'
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/lib/python3.8/site-packages'
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/bin'
+[2.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.ps1'
+[2.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.dsv'
+[2.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.sh'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.bash'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.zsh'
+[2.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/behavior_trees/share/colcon-core/packages/behavior_trees)
+[2.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviors)
+[2.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/behaviors
+[2.439s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors' for CMake module files
+[2.439s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors' for CMake config files
+[2.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviors', 'cmake_prefix_path')
+[2.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/hook/cmake_prefix_path.ps1'
+[2.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/hook/cmake_prefix_path.dsv'
+[2.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/hook/cmake_prefix_path.sh'
+[2.450s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/bin'
+[2.450s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/lib/pkgconfig/behaviors.pc'
+[2.451s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/lib/python3.8/site-packages'
+[2.451s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/bin'
+[2.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.ps1'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.dsv'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.sh'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.bash'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.zsh'
+[2.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/behaviors/share/colcon-core/packages/behaviors)
+[2.464s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_test_utils)
+[2.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/nav2_test_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/nav2_test_utils
+[2.475s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils' for CMake module files
+[2.476s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils' for CMake config files
+[2.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_test_utils', 'cmake_prefix_path')
+[2.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/hook/cmake_prefix_path.ps1'
+[2.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/hook/cmake_prefix_path.dsv'
+[2.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/hook/cmake_prefix_path.sh'
+[2.487s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/lib'
+[2.487s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/bin'
+[2.487s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/lib/pkgconfig/nav2_test_utils.pc'
+[2.487s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/lib/python3.8/site-packages'
+[2.488s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/bin'
+[2.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.ps1'
+[2.498s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.dsv'
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.sh'
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.bash'
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.zsh'
+[2.499s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/nav2_test_utils/share/colcon-core/packages/nav2_test_utils)
+[2.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behavior_trees)
+[2.521s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees' for CMake module files
+[2.521s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees' for CMake config files
+[2.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('behavior_trees', 'cmake_prefix_path')
+[2.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/hook/cmake_prefix_path.ps1'
+[2.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/hook/cmake_prefix_path.dsv'
+[2.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/hook/cmake_prefix_path.sh'
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/bin'
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/lib/pkgconfig/behavior_trees.pc'
+[2.533s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/lib/python3.8/site-packages'
+[2.533s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behavior_trees/bin'
+[2.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.ps1'
+[2.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.dsv'
+[2.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.sh'
+[2.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.bash'
+[2.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behavior_trees/share/behavior_trees/package.zsh'
+[2.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/behavior_trees/share/colcon-core/packages/behavior_trees)
+[2.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(behaviors)
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors' for CMake module files
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors' for CMake config files
+[2.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('behaviors', 'cmake_prefix_path')
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/hook/cmake_prefix_path.ps1'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/hook/cmake_prefix_path.dsv'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/hook/cmake_prefix_path.sh'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/bin'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/lib/pkgconfig/behaviors.pc'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/lib/python3.8/site-packages'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/behaviors/bin'
+[2.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.ps1'
+[2.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.dsv'
+[2.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.sh'
+[2.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.bash'
+[2.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/behaviors/share/behaviors/package.zsh'
+[2.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/behaviors/share/colcon-core/packages/behaviors)
+[2.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_test_utils)
+[2.606s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils' for CMake module files
+[2.606s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils' for CMake config files
+[2.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_test_utils', 'cmake_prefix_path')
+[2.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/hook/cmake_prefix_path.ps1'
+[2.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/hook/cmake_prefix_path.dsv'
+[2.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/hook/cmake_prefix_path.sh'
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/lib'
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/bin'
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/lib/pkgconfig/nav2_test_utils.pc'
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/lib/python3.8/site-packages'
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/nav2_test_utils/bin'
+[2.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.ps1'
+[2.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.dsv'
+[2.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.sh'
+[2.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.bash'
+[2.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.zsh'
+[2.627s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/nav2_test_utils/share/colcon-core/packages/nav2_test_utils)
+[3.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[3.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/msgs
+[3.169s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(msgs)
+[3.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/msgs
+[3.178s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs' for CMake module files
+[3.179s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs' for CMake config files
+[3.179s] Level 1:colcon.colcon_core.shell:create_environment_hook('msgs', 'cmake_prefix_path')
+[3.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/cmake_prefix_path.ps1'
+[3.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/cmake_prefix_path.dsv'
+[3.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/cmake_prefix_path.sh'
+[3.188s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/lib'
+[3.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('msgs', 'ld_library_path_lib')
+[3.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/ld_library_path_lib.ps1'
+[3.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/ld_library_path_lib.dsv'
+[3.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/ld_library_path_lib.sh'
+[3.197s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/bin'
+[3.197s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/lib/pkgconfig/msgs.pc'
+[3.197s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/lib/python3.8/site-packages'
+[3.197s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/bin'
+[3.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.ps1'
+[3.206s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.dsv'
+[3.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.sh'
+[3.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.bash'
+[3.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.zsh'
+[3.207s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/msgs/share/colcon-core/packages/msgs)
+[3.259s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(msgs)
+[3.269s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs' for CMake module files
+[3.270s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs' for CMake config files
+[3.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('msgs', 'cmake_prefix_path')
+[3.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/cmake_prefix_path.ps1'
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/cmake_prefix_path.dsv'
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/cmake_prefix_path.sh'
+[3.279s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/lib'
+[3.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('msgs', 'ld_library_path_lib')
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/ld_library_path_lib.ps1'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/ld_library_path_lib.dsv'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmitha/ros_ws/install/msgs/share/msgs/hook/ld_library_path_lib.sh'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/bin'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/lib/pkgconfig/msgs.pc'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/lib/python3.8/site-packages'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/ashmitha/ros_ws/install/msgs/bin'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.ps1'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.dsv'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.sh'
+[3.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.bash'
+[3.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmitha/ros_ws/install/msgs/share/msgs/package.zsh'
+[3.297s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmitha/ros_ws/install/msgs/share/colcon-core/packages/msgs)
+[3.297s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.298s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.310s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.311s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.312s] ERROR:colcon.colcon_notification.desktop_notification:Exception in desktop notification extension 'notify2': Expected a string or unicode object
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_notification/desktop_notification/__init__.py", line 106, in notify
+    retval = extension.notify(
+  File "/usr/lib/python3/dist-packages/colcon_notification/desktop_notification/notify2.py", line 51, in notify
+    self._last_notification.show()
+  File "/usr/lib/python3/dist-packages/notify2.py", line 181, in show
+    nid = dbus_iface.Notify(appname,       # app_name       (spec names)
+  File "/usr/lib/python3/dist-packages/dbus/proxies.py", line 72, in __call__
+    return self._proxy_method(*args, **keywords)
+  File "/usr/lib/python3/dist-packages/dbus/proxies.py", line 141, in __call__
+    return self._connection.call_blocking(self._named_service,
+  File "/usr/lib/python3/dist-packages/dbus/connection.py", line 643, in call_blocking
+    message.append(signature=signature, *args)
+TypeError: Expected a string or unicode object
+
+[3.312s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify_send'
+[3.317s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.326s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmitha/ros_ws/install/local_setup.ps1'
+[3.327s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ashmitha/ros_ws/install/_local_setup_util_ps1.py'
+[3.328s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmitha/ros_ws/install/setup.ps1'
+[3.337s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmitha/ros_ws/install/local_setup.sh'
+[3.337s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ashmitha/ros_ws/install/_local_setup_util_sh.py'
+[3.337s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmitha/ros_ws/install/setup.sh'
+[3.346s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmitha/ros_ws/install/local_setup.bash'
+[3.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmitha/ros_ws/install/setup.bash'
+[3.355s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmitha/ros_ws/install/local_setup.zsh'
+[3.355s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmitha/ros_ws/install/setup.zsh'

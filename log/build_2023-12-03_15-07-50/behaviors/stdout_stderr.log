@@ -1,0 +1,347 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:68:1:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+   68 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In constructor ‘[01m[Knav2_behaviors::TimedBehavior<ActionT>::TimedBehavior()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:79:3:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+   79 |   [01;31m[K{[m[K
+      |   [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:117:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp_lifecycle::LifecycleNode>[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp_lifecycle::LifecycleNode>[m[K’} has no member named ‘[01m[Klock[m[K’
+  117 |     auto node = node_.[01;31m[Klock[m[K();
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:119:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  119 |     [01;31m[Klogger_[m[K = node->get_logger();
+      |     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:121:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  121 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Configuring %s", name.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:121:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  121 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Configuring %s", name.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:121:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  121 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Configuring %s", name.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:141:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  141 |     vel_pub_ = node->template create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K("cmd_vel", 1);
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::activate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  157 |     RCLCPP_INFO([01;31m[Klogger_[m[K, "Activating %s", behavior_name_.c_str());
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  157 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Activating %s", behavior_name_.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  157 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Activating %s", behavior_name_.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:157:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  157 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Activating %s", behavior_name_.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::execute()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  193 |     RCLCPP_INFO([01;31m[Klogger_[m[K, "Running %s", behavior_name_.c_str());
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  193 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Running %s", behavior_name_.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  193 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Running %s", behavior_name_.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:193:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  193 |     [01;31m[KRCLCPP_INFO[m[K(logger_, "Running %s", behavior_name_.c_str());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:197:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  197 |         [01;31m[Klogger_[m[K,
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:196:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |       [01;31m[KRCLCPP_WARN[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:196:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |       [01;31m[KRCLCPP_WARN[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:196:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |       [01;31m[KRCLCPP_WARN[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:205:5:[m[K [01;31m[Kerror: [m[K‘[01m[KResultStatus[m[K’ was not declared in this scope
+  205 |     [01;31m[KResultStatus[m[K on_run_result = onRun(action_server_->get_current_goal());
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:206:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_run_result[m[K’ was not declared in this scope
+  206 |     if ([01;31m[Kon_run_result[m[K != Status::SUCCEEDED) {
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:208:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  208 |         [01;31m[Klogger_[m[K,
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:207:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  207 |       [01;31m[KRCLCPP_INFO[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:207:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  207 |       [01;31m[KRCLCPP_INFO[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:207:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  207 |       [01;31m[KRCLCPP_INFO[m[K(
+      |       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In lambda function:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:216:64:[m[K [01;31m[Kerror: [m[K‘[01m[Krecovery_name_[m[K’ was not declared in this scope
+  216 |       [&]() {RCLCPP_INFO(node_->get_logger(), "%s running...", [01;31m[Krecovery_name_[m[K.c_str());});
+      |                                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::execute()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:219:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kauto result[m[K’
+  219 |     auto [01;31m[Kresult[m[K = std::make_shared<typename ActionT::Result>();
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:203:10:[m[K [01;36m[Knote: [m[K‘[01m[Kauto result[m[K’ previously declared here
+  203 |     auto [01;36m[Kresult[m[K = std::make_shared<typename ActionT::Result>();
+      |          [01;36m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:223:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kelasped_time_[m[K’ was not declared in this scope
+  223 |       [01;31m[Kelasped_time_[m[K = steady_clock_.now() - start_time;
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:21:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  225 |         RCLCPP_INFO([01;31m[Klogger_[m[K, "Canceling %s", behavior_name_.c_str());
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  225 |         [01;31m[KRCLCPP_INFO[m[K(logger_, "Canceling %s", behavior_name_.c_str());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  225 |         [01;31m[KRCLCPP_INFO[m[K(logger_, "Canceling %s", behavior_name_.c_str());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:225:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  225 |         [01;31m[KRCLCPP_INFO[m[K(logger_, "Canceling %s", behavior_name_.c_str());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:235:11:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  235 |           [01;31m[Klogger_[m[K, "Received a preemption request for %s,"
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:234:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  234 |         [01;31m[KRCLCPP_ERROR[m[K(
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:234:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  234 |         [01;31m[KRCLCPP_ERROR[m[K(
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:234:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  234 |         [01;31m[KRCLCPP_ERROR[m[K(
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:247:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  247 |             [01;31m[Klogger_[m[K,
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:246:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  246 |           [01;31m[KRCLCPP_INFO[m[K(
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:246:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  246 |           [01;31m[KRCLCPP_INFO[m[K(
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:246:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  246 |           [01;31m[KRCLCPP_INFO[m[K(
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:23:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  254 |           RCLCPP_WARN([01;31m[Klogger_[m[K, "%s failed", behavior_name_.c_str());
+      |                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  254 |           [01;31m[KRCLCPP_WARN[m[K(logger_, "%s failed", behavior_name_.c_str());
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  254 |           [01;31m[KRCLCPP_WARN[m[K(logger_, "%s failed", behavior_name_.c_str());
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:254:11:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  254 |           [01;31m[KRCLCPP_WARN[m[K(logger_, "%s failed", behavior_name_.c_str());
+      |           [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp: In instantiation of ‘[01m[Kclass nav2_behaviors::TimedBehavior<msgs::action::Teleop>[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:27:[m[K   required from here
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:111:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::SharedPtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  111 |   void [01;31m[Kconfigure[m[K(
+      |        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:147:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::cleanup() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  147 |   void [01;31m[Kcleanup[m[K() override
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:155:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::activate() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  155 |   void [01;31m[Kactivate[m[K() override
+      |        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:164:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::deactivate() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  164 |   void [01;31m[Kdeactivate[m[K() override
+      |        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:75:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid nav2_behaviors::Teleop::onConfigure()[m[K’
+   75 |     void [01;31m[KTeleop[m[K::onConfigure()
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:75:10:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid nav2_behaviors::Teleop::onConfigure()[m[K’
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass nav2_behaviors::Teleop[m[K’ defined here
+   22 |     class [01;36m[KTeleop[m[K : public TimedBehavior<TeleopAction>
+      |           [01;36m[K^~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual nav2_behaviors::Status nav2_behaviors::Teleop::onCycleUpdate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:169:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kelasped_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Kend_time_[m[K’?
+  169 |         feedback_->time_left = [01;31m[Kelasped_time_[m[K;
+      |                                [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                [32m[Kend_time_[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:244:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  244 |             [01;31m[Klogger_[m[K,
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  243 |             [01;31m[KRCLCPP_WARN_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  243 |             [01;31m[KRCLCPP_WARN_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:243:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  243 |             [01;31m[KRCLCPP_WARN_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:258:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_frame_[m[K’ was not declared in this scope; did you mean ‘[01m[Kglobal_frame_[m[K’?
+  258 |             current_pose, *tf_, [01;31m[Klocal_frame_[m[K, robot_base_frame_,
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                                 [32m[Kglobal_frame_[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:31[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:262:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+  262 |             [01;31m[Klogger_[m[K,
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:261:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  261 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:261:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  261 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:261:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  261 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K(
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:265:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  265 |             return Status::FAILED
+      |                                  [01;31m[K^[m[K
+      |                                  [32m[K;[m[K
+  266 |         [32m[K}[m[K
+      |         [32m[K~[m[K                         
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:280[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:281:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kbehaviors[m[K’ does not name a type; did you mean ‘[01m[Knav2_behaviors[m[K’?
+  281 | PLUGINLIB_EXPORT_CLASS([01;31m[Kbehaviors[m[K::Teleop, nav2_core::Recovery)
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:281:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+  281 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Recovery)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:281:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [18], const char [20])[m[K’
+  281 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Recovery)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:280[m[K:
+[01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+  210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:280[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:281:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  281 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Recovery)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In constructor ‘[01m[Kbehavior_server::BehaviorServer::BehaviorServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:25:60:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   25 | BehaviorServer::BehaviorServer([01;31m[Kconst rclcpp::NodeOptions & options[m[K)
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

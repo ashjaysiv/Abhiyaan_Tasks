@@ -1,0 +1,71 @@
+[0.040s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.077s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.079s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.079s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.079s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.079s]   the cmake_policy command to set the policy and suppress this warning.
+[0.079s] 
+[0.079s] Call Stack (most recent call first):
+[0.079s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.079s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.079s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.079s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.079s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.079s]   CMakeLists.txt:19 (find_package)
+[0.079s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.080s] [0m
+[0.097s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.306s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.338s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.340s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.485s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.486s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.584s] -- Found nav2_behavior_tree: 0.4.7 (/opt/ros/foxy/share/nav2_behavior_tree/cmake)
+[1.282s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.548s] -- Found nav2_core: 0.4.7 (/opt/ros/foxy/share/nav2_core/cmake)
+[2.508s] -- Found nav2_common: 0.4.7 (/opt/ros/foxy/share/nav2_common/cmake)
+[2.508s] -- Setting build type to Release as none was specified.
+[9.684s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[9.763s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.764s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.764s] -- Configured cppcheck include dirs: /home/ashmitha/ros_ws/src/behaviors/include;/home/ashmitha/ros_ws/src/behaviors/./include;/home/ashmitha/ros_ws/src/behaviors/..
+[9.764s] -- Configured cppcheck exclude dirs and/or files: 
+[9.766s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.766s] -- Configured cpplint exclude dirs and/or files: 
+[9.767s] -- Added test 'lint_cmake' to check CMake code style
+[9.768s] -- Added test 'uncrustify' to check C / C++ code style
+[9.768s] -- Configured uncrustify additional arguments: 
+[9.768s] -- Added test 'xmllint' to check XML markup files
+[9.769s] -- Configuring done (9.7s)
+[9.780s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[9.780s]   Cannot find source file:
+[9.780s] 
+[9.780s]     src/behavior_server.cpp
+[9.780s] 
+[9.780s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[9.780s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[9.780s]   .f95 .f03 .hip .ispc
+[9.780s] 
+[9.780s] [0m
+[9.781s] [31mCMake Error at CMakeLists.txt:82 (add_executable):
+[9.781s]   Cannot find source file:
+[9.781s] 
+[9.781s]     src/main.cpp
+[9.781s] 
+[9.781s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[9.781s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[9.781s]   .f95 .f03 .hip .ispc
+[9.781s] 
+[9.781s] [0m
+[9.785s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[9.785s]   No SOURCES given to target: behavior_server_core
+[9.786s] 
+[9.786s] [0m
+[9.786s] [31mCMake Error at CMakeLists.txt:82 (add_executable):
+[9.786s]   No SOURCES given to target: behavior_server
+[9.786s] 
+[9.786s] [0m
+[9.786s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[9.794s] make: *** [Makefile:226: cmake_check_build_system] Error 1
+[9.800s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

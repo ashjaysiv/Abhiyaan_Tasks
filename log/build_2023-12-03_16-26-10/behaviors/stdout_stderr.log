@@ -1,0 +1,56 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp: In instantiation of ‘[01m[Kclass nav2_behaviors::TimedBehavior<msgs::action::Teleop>[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:27:[m[K   required from here
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:111:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::SharedPtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  111 |   void [01;31m[Kconfigure[m[K(
+      |        [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:45:18:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KRecoveryServer[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   45 |   RecoveryServer([01;31m[K)[m[K;
+      |                  [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:46:18:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+   46 |   ~RecoveryServer[01;31m[K([m[K);
+      |                  [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:25:32:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kbehavior_server::BehaviorServer::BehaviorServer()[m[K’
+   25 | BehaviorServer::BehaviorServer([01;31m[K)[m[K
+      |                                [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:28:41:[m[K [01;31m[Kerror: [m[Kmixing declarations and function-definitions is forbidden
+   28 |   default_ids_{"spin", "backup", "wait"}[01;31m[K,[m[K
+      |                                         [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:29:17:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K{[m[K’ token
+   29 |   default_types_[01;31m[K{[m[K"nav2_recoveries/Spin",
+      |                 [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:33:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+   33 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:57:33:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kvirtual behavior_server::BehaviorServer::~BehaviorServer()[m[K’
+   57 | BehaviorServer::~BehaviorServer([01;31m[K)[m[K
+      |                                 [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:57[m[K,
+                 from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:276[m[K:
+/opt/ros/foxy/include/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = nav2_behaviors::Teleop; B = nav2_core::Recovery][m[K’:
+[01m[K/opt/ros/foxy/include/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/foxy/include/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Knav2_behaviors::Teleop[m[K’
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:11:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Knav2_behaviors::Teleop[m[K’:
+   22 |     class [01;36m[KTeleop[m[K : public TimedBehavior<TeleopAction>
+      |           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:37[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/nav2_core/recovery.hpp:49:16:[m[K [01;36m[Knote: [m[K	‘[01m[Kvirtual void nav2_core::Recovery::configure(rclcpp_lifecycle::LifecycleNode::SharedPtr, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>)[m[K’
+   49 |   virtual void [01;36m[Kconfigure[m[K(
+      |                [01;36m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

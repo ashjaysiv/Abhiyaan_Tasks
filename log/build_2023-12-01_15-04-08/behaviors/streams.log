@@ -1,0 +1,19 @@
+[0.052s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.100s] [ 16%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[0.101s] [ 33%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[0.147s] In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[0.147s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Knav2_behaviors/timed_behavior.hpp: No such file or directory
+[0.147s]    10 | #include [01;31m[K"nav2_behaviors/timed_behavior.hpp"[m[K
+[0.147s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.147s] compilation terminated.
+[0.148s] make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+[0.149s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+[0.149s] make[1]: *** Waiting for unfinished jobs....
+[0.190s] [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20:10:[m[K [01;31m[Kfatal error: [m[Knav2_behaviors/behavior_server.hpp: No such file or directory
+[0.191s]    20 | #include [01;31m[K"nav2_behaviors/behavior_server.hpp"[m[K
+[0.191s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.191s] compilation terminated.
+[0.197s] make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+[0.197s] make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+[0.197s] make: *** [Makefile:146: all] Error 2
+[0.203s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

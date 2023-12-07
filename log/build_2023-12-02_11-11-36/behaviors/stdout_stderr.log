@@ -1,0 +1,205 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual void nav2_behaviors::Teleop::onConfigure()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:185:26:[m[K [01;31m[Kerror: [m[K‘[01m[KteleopVelocityCallback[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop[m[K’
+  185 |                 &Teleop::[01;31m[KteleopVelocityCallback[m[K, this, std::placeholders::_1
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:191:26:[m[K [01;31m[Kerror: [m[K‘[01m[KpremeptTeleopCallback[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop[m[K’
+  191 |                 &Teleop::[01;31m[KpremeptTeleopCallback[m[K, this, std::placeholders::_1
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual nav2_behaviors::ResultStatus nav2_behaviors::Teleop::onRun(std::shared_ptr<const msgs::action::Teleop_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:199:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct msgs::action::Teleop_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct msgs::action::Teleop_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktime_allowance[m[K’
+  199 |         command_time_allowance_ = command->[01;31m[Ktime_allowance[m[K;
+      |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:201:68:[m[K [01;31m[Kerror: [m[K‘[01m[KNONE[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop::TeleopActionResult[m[K’ {aka ‘[01m[Kmsgs::action::Teleop_Result_<std::allocator<void> >[m[K’}
+  201 |         return ResultStatus{Status::SUCCEEDED, TeleopActionResult::[01;31m[KNONE[m[K};
+      |                                                                    [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual void nav2_behaviors::Teleop::onActionCompletion(std::shared_ptr<msgs::action::Teleop_Result_<std::allocator<void> > >)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:206:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kteleop_twist_[m[K’ was not declared in this scope
+  206 |         [01;31m[Kteleop_twist_[m[K = geometry_msgs::msg::Twist();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual nav2_behaviors::ResultStatus nav2_behaviors::Teleop::onCycleUpdate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:212:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Feedback_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Feedback_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcurrent_teleop_duration[m[K’
+  212 |         feedback_->[01;31m[Kcurrent_teleop_duration[m[K = elasped_time_;
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:237:18:[m[K [01;31m[Kerror: [m[K‘[01m[KmoveBindings[m[K’ was not declared in this scope
+  237 |         else if ([01;31m[KmoveBindings[m[K.count(key) == 1)
+      |                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:248:18:[m[K [01;31m[Kerror: [m[K‘[01m[KspeedBindings[m[K’ was not declared in this scope
+  248 |         else if ([01;31m[KspeedBindings[m[K.count(key) == 1)
+      |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:290:69:[m[K [01;31m[Kerror: [m[K‘[01m[KTIMEOUT[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop::TeleopActionResult[m[K’ {aka ‘[01m[Kmsgs::action::Teleop_Result_<std::allocator<void> >[m[K’}
+  290 |             return ResultStatus{Status::FAILED, TeleopActionResult::[01;31m[KTIMEOUT[m[K};
+      |                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:296:72:[m[K [01;31m[Kerror: [m[K‘[01m[KNONE[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop::TeleopActionResult[m[K’ {aka ‘[01m[Kmsgs::action::Teleop_Result_<std::allocator<void> >[m[K’}
+  296 |             return ResultStatus{Status::SUCCEEDED, TeleopActionResult::[01;31m[KNONE[m[K};
+      |                                                                        [01;31m[K^~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:308:69:[m[K [01;31m[Kerror: [m[K‘[01m[KTF_ERROR[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop::TeleopActionResult[m[K’ {aka ‘[01m[Kmsgs::action::Teleop_Result_<std::allocator<void> >[m[K’}
+  308 |             return ResultStatus{Status::FAILED, TeleopActionResult::[01;31m[KTF_ERROR[m[K};
+      |                                                                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:313:66:[m[K [01;31m[Kerror: [m[K‘[01m[KNONE[m[K’ is not a member of ‘[01m[Knav2_behaviors::Teleop::TeleopActionResult[m[K’ {aka ‘[01m[Kmsgs::action::Teleop_Result_<std::allocator<void> >[m[K’}
+  313 |         return ResultStatus{Status::RUNNING, TeleopActionResult::[01;31m[KNONE[m[K};
+      |                                                                  [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:323[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K At global scope:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kbehaviors[m[K’ does not name a type; did you mean ‘[01m[Knav2_behaviors[m[K’?
+  324 | PLUGINLIB_EXPORT_CLASS([01;31m[Kbehaviors[m[K::Teleop, nav2_core::Behavior)
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+  324 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Behavior)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [18], const char [20])[m[K’
+  324 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Behavior)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:323[m[K:
+[01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+  210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:323[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:324:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  324 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(behaviors::Teleop, nav2_core::Behavior)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In constructor ‘[01m[Kbehavior_server::BehaviorServer::BehaviorServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:32:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_util::LifecycleNode::LifecycleNode(const char [16], const char [1], const rclcpp::NodeOptions&)[m[K’
+   32 |     "nav2_behaviors/Wait"[01;31m[K}[m[K
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:21[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/opt/ros/foxy/include/nav2_util/lifecycle_node.hpp:39:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_util::LifecycleNode::LifecycleNode(const string&, const string&, bool, const rclcpp::NodeOptions&)[m[K’
+   39 |   [01;36m[KLifecycleNode[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_util/lifecycle_node.hpp:42:10:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst rclcpp::NodeOptions[m[K’ to ‘[01m[Kbool[m[K’
+   42 |     [01;36m[Kbool use_rclcpp_node = false[m[K,
+      |     [01;36m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In member function ‘[01m[Kvirtual nav2_util::CallbackReturn behavior_server::BehaviorServer::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:203:3:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateBond[m[K’ was not declared in this scope
+  203 |   [01;31m[KcreateBond[m[K();
+      |   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In member function ‘[01m[Kvirtual nav2_util::CallbackReturn behavior_server::BehaviorServer::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:219:3:[m[K [01;31m[Kerror: [m[K‘[01m[KdestroyBond[m[K’ was not declared in this scope
+  219 |   [01;31m[KdestroyBond[m[K();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:15[m[K:
+/usr/include/c++/9/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = nav2_costmap_2d::FootprintSubscriber; _Args = {std::shared_ptr<nav2_util::LifecycleNode>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, tf2_ros::Buffer&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, double&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<nav2_costmap_2d::FootprintSubscriber>][m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:175:93:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/unique_ptr.h:857:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(std::shared_ptr<nav2_util::LifecycleNode>, std::__cxx11::basic_string<char>&, tf2_ros::Buffer&, std::__cxx11::basic_string<char>&, double&)[m[K’
+  857 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:31[m[K,
+                 from [01m[K/opt/ros/foxy/include/nav2_core/behavior.hpp:24[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:26[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:41:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeTopicsInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, const string&, const double&)[m[K’
+   41 |   [01;36m[KFootprintSubscriber[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:41:3:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 5 provided
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:36:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(rclcpp::Node::SharedPtr, const string&, const double&)[m[K’
+   36 |   [01;36m[KFootprintSubscriber[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:36:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 5 provided
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:31:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(rclcpp_lifecycle::LifecycleNode::SharedPtr, const string&, const double&)[m[K’
+   31 |   [01;36m[KFootprintSubscriber[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:31:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 5 provided
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:28:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::FootprintSubscriber::FootprintSubscriber(const nav2_costmap_2d::FootprintSubscriber&)[m[K’
+   28 | class [01;36m[KFootprintSubscriber[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/footprint_subscriber.hpp:28:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp: In instantiation of ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::execute() [with ActionT = msgs::action::Teleop][m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:150:17:[m[K   required from ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const WeakPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::WeakPtr = std::weak_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:116:8:[m[K   required from here
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:232:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kerror_code[m[K’
+  232 |       [01;31m[Kresult->error_code[m[K = on_run_result.error_code;
+      |       [01;31m[K~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:245:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktotal_elapsed_time[m[K’
+  245 |         [01;31m[Kresult->total_elapsed_time[m[K = elasped_time_;
+      |         [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:258:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktotal_elapsed_time[m[K’
+  258 |         [01;31m[Kresult->total_elapsed_time[m[K = steady_clock_.now() - start_time;
+      |         [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:270:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktotal_elapsed_time[m[K’
+  270 |           [01;31m[Kresult->total_elapsed_time[m[K = steady_clock_.now() - start_time;
+      |           [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:277:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktotal_elapsed_time[m[K’
+  277 |           [01;31m[Kresult->total_elapsed_time[m[K = steady_clock_.now() - start_time;
+      |           [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:278:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msgs::action::Teleop_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kerror_code[m[K’
+  278 |           [01;31m[Kresult->error_code[m[K = on_cycle_update_result.error_code;
+      |           [01;31m[K~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/9/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/9/bits/stl_tree.h:64[m[K,
+                 from [01m[K/usr/include/c++/9/map:60[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:2[m[K:
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}; _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>][m[K’:
+[01m[K/usr/include/c++/9/bits/alloc_traits.h:483:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}; _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node> >][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}; _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; _Alloc = std::allocator<nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; _Alloc = std::allocator<nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node> >; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node> >; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}; _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:359:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node> >; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}; _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:701:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; _Alloc = std::allocator<nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node> >; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:717:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = nav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>; _Args = {std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&}][m[K’
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:148:52:[m[K   required from ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const WeakPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::WeakPtr = std::weak_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:116:8:[m[K   required from here
+[01m[K/usr/include/c++/9/ext/new_allocator.h:146:4:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_util::SimpleActionServer<msgs::action::Teleop, rclcpp::Node>::SimpleActionServer(std::shared_ptr<rclcpp_lifecycle::LifecycleNode>&, std::__cxx11::basic_string<char>&, std::_Bind<void (nav2_behaviors::TimedBehavior<msgs::action::Teleop>::*(nav2_behaviors::TimedBehavior<msgs::action::Teleop>*))()>, std::nullptr_t, std::chrono::duration<long int, std::ratio<1, 1000> >, bool, rcl_action_server_options_t&)[m[K’
+  146 |  { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:35[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/nav2_util/simple_action_server.hpp:51:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_util::SimpleActionServer<ActionT, nodeT>::SimpleActionServer(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, nav2_util::SimpleActionServer<ActionT, nodeT>::ExecuteCallback, bool, std::chrono::milliseconds) [with ActionT = msgs::action::Teleop; nodeT = rclcpp::Node; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>; rclcpp::node_interfaces::NodeClockInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeClockInterface>; rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeLoggingInterface>; rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeWaitablesInterface>; std::string = std::__cxx11::basic_string<char>; nav2_util::SimpleActionServer<ActionT, nodeT>::ExecuteCallback = std::function<void()>; std::chrono::milliseconds = std::chrono::duration<long int, std::ratio<1, 1000> >][m[K’
+   51 |   explicit [01;36m[KSimpleActionServer[m[K(
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_util/simple_action_server.hpp:52:59:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[Krclcpp_lifecycle::LifecycleNode[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::node_interfaces::NodeBaseInterface[m[K>[m[K’
+   52 |     [01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_base_interface[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_util/simple_action_server.hpp:37:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_util::SimpleActionServer<ActionT, nodeT>::SimpleActionServer(typename nodeT::SharedPtr, const string&, nav2_util::SimpleActionServer<ActionT, nodeT>::ExecuteCallback, bool, std::chrono::milliseconds) [with ActionT = msgs::action::Teleop; nodeT = rclcpp::Node; typename nodeT::SharedPtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; nav2_util::SimpleActionServer<ActionT, nodeT>::ExecuteCallback = std::function<void()>; std::chrono::milliseconds = std::chrono::duration<long int, std::ratio<1, 1000> >][m[K’
+   37 |   explicit [01;36m[KSimpleActionServer[m[K(
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_util/simple_action_server.hpp:37:12:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 7 provided
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/9/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/9/memory:63[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:15[m[K:
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = nav2_costmap_2d::CostmapTopicCollisionChecker; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker][m[K’:
+[01m[K/usr/include/c++/9/bits/alloc_traits.h:483:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = nav2_costmap_2d::CostmapTopicCollisionChecker; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:359:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}; _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:701:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Alloc = std::allocator<nav2_costmap_2d::CostmapTopicCollisionChecker>; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:717:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = nav2_costmap_2d::CostmapTopicCollisionChecker; _Args = {nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*}][m[K’
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:178:61:[m[K   required from here
+[01m[K/usr/include/c++/9/ext/new_allocator.h:146:4:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_costmap_2d::CostmapTopicCollisionChecker::CostmapTopicCollisionChecker(nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, const char*)[m[K’
+  146 |  { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav2_core/behavior.hpp:24[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:26[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:44:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::CostmapTopicCollisionChecker::CostmapTopicCollisionChecker(nav2_costmap_2d::CostmapSubscriber&, nav2_costmap_2d::FootprintSubscriber&, tf2_ros::Buffer&, std::string, std::string, std::string, double)[m[K’
+   44 |   [01;36m[KCostmapTopicCollisionChecker[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:47:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ktf2_ros::Buffer&[m[K’
+   47 |     [01;36m[Ktf2_ros::Buffer & tf[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:41:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav2_costmap_2d::CostmapTopicCollisionChecker::CostmapTopicCollisionChecker(const nav2_costmap_2d::CostmapTopicCollisionChecker&)[m[K’
+   41 | class [01;36m[KCostmapTopicCollisionChecker[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp:41:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

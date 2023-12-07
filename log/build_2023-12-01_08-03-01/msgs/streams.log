@@ -1,0 +1,46 @@
+[0.080s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[0.110s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.112s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.276s] Error processing idl file: /home/ashmitha/ros_ws/build/msgs/rosidl_adapter/msgs/action/Teleop.idl
+[0.276s] Traceback (most recent call last):
+[0.276s]   File "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 40, in <module>
+[0.276s]     sys.exit(main())
+[0.276s]              ^^^^^^
+[0.276s]   File "/opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main
+[0.277s]     return generate_c(
+[0.277s]            ^^^^^^^^^^^
+[0.277s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+[0.277s]     generate_files(
+[0.277s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 98, in generate_files
+[0.277s]     raise(e)
+[0.277s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 89, in generate_files
+[0.277s]     expand_template(
+[0.277s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 133, in expand_template
+[0.277s]     em.BUFFERED_OPT: True,
+[0.277s]     ^^^^^^^^^^^^^^^
+[0.277s] AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+[0.286s] Error processing idl file: /home/ashmitha/ros_ws/build/msgs/rosidl_adapter/msgs/action/Teleop.idl
+[0.287s] Traceback (most recent call last):
+[0.287s]   File "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 40, in <module>
+[0.287s]     sys.exit(main())
+[0.287s]              ^^^^^^
+[0.287s]   File "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+[0.287s]     return generate_cpp(
+[0.287s]            ^^^^^^^^^^^^^
+[0.287s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py", line 39, in generate_cpp
+[0.287s]     generate_files(
+[0.288s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 98, in generate_files
+[0.288s]     raise(e)
+[0.288s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 89, in generate_files
+[0.288s]     expand_template(
+[0.288s]   File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 133, in expand_template
+[0.288s]     em.BUFFERED_OPT: True,
+[0.289s]     ^^^^^^^^^^^^^^^
+[0.289s] AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+[0.293s] make[2]: *** [CMakeFiles/msgs__rosidl_generator_c.dir/build.make:94: rosidl_generator_c/msgs/action/teleop.h] Error 1
+[0.294s] make[1]: *** [CMakeFiles/Makefile2:209: CMakeFiles/msgs__rosidl_generator_c.dir/all] Error 2
+[0.294s] make[1]: *** Waiting for unfinished jobs....
+[0.302s] make[2]: *** [CMakeFiles/msgs__cpp.dir/build.make:104: rosidl_generator_cpp/msgs/action/teleop.hpp] Error 1
+[0.302s] make[1]: *** [CMakeFiles/Makefile2:342: CMakeFiles/msgs__cpp.dir/all] Error 2
+[0.302s] make: *** [Makefile:146: all] Error 2
+[0.426s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8

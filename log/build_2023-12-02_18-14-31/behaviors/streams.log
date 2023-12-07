@@ -1,0 +1,24 @@
+[0.050s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': AMENT_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/ashmitha/ros_ws/install/msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.106s] [ 16%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[0.107s] [ 33%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[0.200s] In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/behavior_server.hpp:21[m[K,
+[0.200s]                  from [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20[m[K:
+[0.200s] [01m[K/opt/ros/foxy/include/nav2_util/lifecycle_node.hpp:25:10:[m[K [01;31m[Kfatal error: [m[Kbondcpp/bond.hpp: No such file or directory
+[0.200s]    25 | #include [01;31m[K"bondcpp/bond.hpp"[m[K
+[0.200s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.200s] compilation terminated.
+[0.203s] make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+[0.204s] make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+[0.204s] make[1]: *** Waiting for unfinished jobs....
+[0.231s] In file included from [01m[K/opt/ros/foxy/include/nav2_core/behavior.hpp:22[m[K,
+[0.231s]                  from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:37[m[K,
+[0.231s]                  from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+[0.231s]                  from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[0.231s] [01m[K/opt/ros/foxy/include/nav2_util/lifecycle_node.hpp:25:10:[m[K [01;31m[Kfatal error: [m[Kbondcpp/bond.hpp: No such file or directory
+[0.231s]    25 | #include [01;31m[K"bondcpp/bond.hpp"[m[K
+[0.232s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.232s] compilation terminated.
+[0.233s] make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+[0.233s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+[0.233s] make: *** [Makefile:146: all] Error 2
+[0.239s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': AMENT_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashmitha/ros_ws/install/msgs:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) LD_LIBRARY_PATH=/home/ashmitha/ros_ws/install/msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ashmitha/ros_ws/install/msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

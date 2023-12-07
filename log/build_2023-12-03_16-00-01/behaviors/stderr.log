@@ -1,0 +1,82 @@
+In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:12[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:68:1:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+   68 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In constructor ‘[01m[Knav2_behaviors::TimedBehavior<ActionT>::TimedBehavior()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:79:3:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+   79 |   [01;31m[K{[m[K
+      |   [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[Knode_[m[K’?
+  123 |     [01;31m[Knode[m[K->get_parameter("cycle_frequency", cycle_frequency_);
+      |     [01;31m[K^~~~[m[K
+      |     [32m[Knode_[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:138:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  138 |     vel_pub_ = node->template create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K("cmd_vel", 1);
+      |                                                                         [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:[m[K In member function ‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::execute()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:219:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kelasped_time_[m[K’ was not declared in this scope
+  219 |       [01;31m[Kelasped_time_[m[K = steady_clock_.now() - start_time;
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp: In instantiation of ‘[01m[Kclass nav2_behaviors::TimedBehavior<msgs::action::Teleop>[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:22:27:[m[K   required from here
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:111:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::configure(const SharedPtr&, const string&, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::CostmapTopicCollisionChecker>) [with ActionT = msgs::action::Teleop; rclcpp_lifecycle::LifecycleNode::SharedPtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  111 |   void [01;31m[Kconfigure[m[K(
+      |        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:144:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::cleanup() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  144 |   void [01;31m[Kcleanup[m[K() override
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:152:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::activate() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  152 |   void [01;31m[Kactivate[m[K() override
+      |        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/timed_behavior.hpp:161:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid nav2_behaviors::TimedBehavior<ActionT>::deactivate() [with ActionT = msgs::action::Teleop][m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+  161 |   void [01;31m[Kdeactivate[m[K() override
+      |        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual void nav2_behaviors::Teleop::onConfigure()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:135:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[Knode_[m[K’?
+  135 |         [01;31m[Knode[m[K->get_parameter("projection_time", projection_time_);
+      |         [01;31m[K^~~~[m[K
+      |         [32m[Knode_[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:141:68:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  141 |         vel_pub_ = node->create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K(
+      |                                                                    [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:142:13:[m[K [01;31m[Kerror: [m[Kleft operand of comma operator has no effect [[01;31m[K-Werror=unused-value[m[K]
+  142 |             [01;31m[Kcmd_vel_teleop[m[K, rclcpp::SystemDefaultsQoS()
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:145:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  145 |         preempt_teleop_sub_ = node->create_subscription<std_msgs::msg::Empty[01;31m[K>[m[K(
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:146:13:[m[K [01;31m[Kerror: [m[Kleft operand of comma operator has no effect [[01;31m[K-Werror=unused-value[m[K]
+  146 |             [01;31m[K"preempt_teleop"[m[K, rclcpp::SystemDefaultsQoS(),
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:[m[K In member function ‘[01m[Kvirtual nav2_behaviors::Status nav2_behaviors::Teleop::onCycleUpdate()[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:164:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kelasped_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Kend_time_[m[K’?
+  164 |         feedback_->time_left = [01;31m[Kelasped_time_[m[K;
+      |                                [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                [32m[Kend_time_[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:253:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_frame_[m[K’ was not declared in this scope; did you mean ‘[01m[Kglobal_frame_[m[K’?
+  253 |             current_pose, *tf_, [01;31m[Klocal_frame_[m[K, robot_base_frame_,
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                                 [32m[Kglobal_frame_[m[K
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:[m[K In constructor ‘[01m[Kbehavior_server::BehaviorServer::BehaviorServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:25:60:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   25 | BehaviorServer::BehaviorServer([01;31m[Kconst rclcpp::NodeOptions & options[m[K)
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/class_loader/class_loader_core.hpp:57[m[K,
+                 from [01m[K/opt/ros/foxy/include/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/foxy/include/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:275[m[K:
+/opt/ros/foxy/include/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = nav2_behaviors::Teleop; B = nav2_core::Recovery][m[K’:
+[01m[K/opt/ros/foxy/include/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/foxy/include/class_loader/meta_object.hpp:218:16:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Knav2_behaviors::Teleop*[m[K’ to ‘[01m[Knav2_core::Recovery*[m[K’ in return
+  218 |     return new [01;31m[KC[m[K;
+      |                [01;31m[K^[m[K
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

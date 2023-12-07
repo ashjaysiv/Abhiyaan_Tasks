@@ -1,0 +1,2 @@
+Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake /home/ashmitha/ros_ws/src/msgs -DCMAKE_INSTALL_PREFIX=/home/ashmitha/ros_ws/install/msgs
+Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake /home/ashmitha/ros_ws/src/msgs -DCMAKE_INSTALL_PREFIX=/home/ashmitha/ros_ws/install/msgs

@@ -1,0 +1,59 @@
+[0.040s] Invoking command in '/home/ashmitha/ros_ws/build/behaviors': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8
+[0.074s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.076s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.076s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.076s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.076s]   the cmake_policy command to set the policy and suppress this warning.
+[0.076s] 
+[0.076s] Call Stack (most recent call first):
+[0.076s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.076s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.076s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.076s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.076s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.076s]   CMakeLists.txt:19 (find_package)
+[0.077s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.077s] [0m
+[0.091s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.264s] -- Found nav2_common: 0.4.7 (/opt/ros/foxy/share/nav2_common/cmake)
+[0.264s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.289s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.292s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.396s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.431s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.432s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.527s] -- Found nav2_behavior_tree: 0.4.7 (/opt/ros/foxy/share/nav2_behavior_tree/cmake)
+[1.121s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.375s] -- Found nav2_core: 0.4.7 (/opt/ros/foxy/share/nav2_core/cmake)
+[9.002s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[9.075s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.076s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.076s] -- Configured cppcheck include dirs: /home/ashmitha/ros_ws/src/behaviors/include;/home/ashmitha/ros_ws/src/behaviors/./include;/home/ashmitha/ros_ws/src/behaviors/..
+[9.076s] -- Configured cppcheck exclude dirs and/or files: 
+[9.077s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.077s] -- Configured cpplint exclude dirs and/or files: 
+[9.078s] -- Added test 'lint_cmake' to check CMake code style
+[9.078s] -- Added test 'uncrustify' to check C / C++ code style
+[9.079s] -- Configured uncrustify additional arguments: 
+[9.079s] -- Added test 'xmllint' to check XML markup files
+[9.079s] -- Configuring done (9.0s)
+[9.148s] -- Generating done (0.1s)
+[9.150s] -- Build files have been written to: /home/ashmitha/ros_ws/build/behaviors
+[9.171s] [ 16%] [32mBuilding CXX object CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o[0m
+[9.171s] [ 33%] [32mBuilding CXX object CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o[0m
+[9.212s] In file included from [01m[K/home/ashmitha/ros_ws/src/behaviors/plugins/teleop.cpp:4[m[K:
+[9.213s] [01m[K/home/ashmitha/ros_ws/src/behaviors/include/behaviors/plugins/teleop.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Knav2_behaviors/timed_behavior.hpp: No such file or directory
+[9.213s]    10 | #include [01;31m[K"nav2_behaviors/timed_behavior.hpp"[m[K
+[9.213s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.213s] compilation terminated.
+[9.214s] make[2]: *** [CMakeFiles/nav2_teleop_behavior.dir/build.make:76: CMakeFiles/nav2_teleop_behavior.dir/plugins/teleop.cpp.o] Error 1
+[9.214s] make[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/nav2_teleop_behavior.dir/all] Error 2
+[9.214s] make[1]: *** Waiting for unfinished jobs....
+[9.264s] [01m[K/home/ashmitha/ros_ws/src/behaviors/src/behavior_server.cpp:20:10:[m[K [01;31m[Kfatal error: [m[Knav2_behaviors/behavior_server.hpp: No such file or directory
+[9.264s]    20 | #include [01;31m[K"nav2_behaviors/behavior_server.hpp"[m[K
+[9.264s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.264s] compilation terminated.
+[9.266s] make[2]: *** [CMakeFiles/behavior_server_core.dir/build.make:76: CMakeFiles/behavior_server_core.dir/src/behavior_server.cpp.o] Error 1
+[9.266s] make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/behavior_server_core.dir/all] Error 2
+[9.267s] make: *** [Makefile:146: all] Error 2
+[9.273s] Invoked command in '/home/ashmitha/ros_ws/build/behaviors' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/behaviors -- -j8 -l8

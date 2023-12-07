@@ -1,0 +1,7 @@
+<class_libraries>
+    <library path="nav2_teleop_behavior">
+	  <class name="behaviors/Teleop" type="behaviors::Teleop" base_class_type="nav2_core::Behavior">
+	    <description>Teleop for stated time</description>
+	  </class>
+	</library>
+</class_libraries>

@@ -1,0 +1,94 @@
+[0.101s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[0.129s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.130s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.130s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.130s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.130s]   the cmake_policy command to set the policy and suppress this warning.
+[0.130s] 
+[0.130s] Call Stack (most recent call first):
+[0.131s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.131s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.131s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.131s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.131s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.131s]   CMakeLists.txt:8 (find_package)
+[0.131s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.131s] [0m
+[0.145s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3") 
+[0.145s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.316s] -- Found nav2_common: 0.4.7 (/opt/ros/foxy/share/nav2_common/cmake)
+[0.316s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.332s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.335s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.441s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.457s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.464s] -- Found action_msgs: 1.0.0 (/opt/ros/foxy/share/action_msgs/cmake)
+[0.490s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.584s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[0.584s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.584s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.584s]   the cmake_policy command to set the policy and suppress this warning.
+[0.584s] 
+[0.584s] Call Stack (most recent call first):
+[0.584s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.585s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[0.585s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.585s] [0m
+[0.598s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found version "3.11.4") 
+[0.717s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.854s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.907s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.911s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[0.911s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.911s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.911s]   the cmake_policy command to set the policy and suppress this warning.
+[0.911s] 
+[0.911s] Call Stack (most recent call first):
+[0.911s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[0.911s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[0.911s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[0.911s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.911s] [0m
+[0.924s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3.5") 
+[0.924s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.925s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+[0.925s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.925s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.925s]   the cmake_policy command to set the policy and suppress this warning.
+[0.925s] 
+[0.925s] Call Stack (most recent call first):
+[0.925s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[0.925s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[0.925s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[0.925s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[0.925s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.925s] [0m
+[0.938s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+[0.938s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.938s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.938s]   the cmake_policy command to set the policy and suppress this warning.
+[0.938s] 
+[0.938s] Call Stack (most recent call first):
+[0.939s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[0.939s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[0.939s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[0.939s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[0.939s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.939s] [0m
+[0.940s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.940s] -- Using PYTHON_INCLUDE_DIRS: /home/ashmitha/anaconda3/include/python3.11
+[0.940s] -- Using PYTHON_LIBRARIES: /home/ashmitha/anaconda3/lib/libpython3.11.so
+[1.025s] -- Using numpy include directory: /home/ashmitha/anaconda3/lib/python3.11/site-packages/numpy/core/include
+[1.035s] [31mCMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:52 (target_include_directories):
+[1.035s]   target_include_directories called with non-compilable target type
+[1.035s] Call Stack (most recent call first):
+[1.035s]   CMakeLists.txt:26 (rosidl_target_interfaces)
+[1.035s] 
+[1.035s] [0m
+[1.035s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.041s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.042s] -- Added test 'lint_cmake' to check CMake code style
+[1.043s] -- Added test 'xmllint' to check XML markup files
+[1.044s] -- Configuring incomplete, errors occurred!
+[1.049s] make: *** [Makefile:719: cmake_check_build_system] Error 1
+[1.052s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8

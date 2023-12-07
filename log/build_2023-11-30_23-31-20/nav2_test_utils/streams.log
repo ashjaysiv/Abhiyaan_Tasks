@@ -1,0 +1,62 @@
+[0.054s] Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+[0.084s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.084s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.085s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.085s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.085s]   the cmake_policy command to set the policy and suppress this warning.
+[0.085s] 
+[0.085s] Call Stack (most recent call first):
+[0.085s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.085s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.085s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.085s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.085s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.085s]   CMakeLists.txt:19 (find_package)
+[0.085s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.085s] [0m
+[0.102s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.244s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.269s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.272s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.377s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.410s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.411s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.507s] -- Found rclcpp_action: 2.4.3 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.559s] -- Found nav2_msgs: 0.4.7 (/opt/ros/foxy/share/nav2_msgs/cmake)
+[0.806s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.865s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.867s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.867s] -- Configured cppcheck include dirs: 
+[0.867s] -- Configured cppcheck exclude dirs and/or files: 
+[0.868s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.868s] -- Configured cpplint exclude dirs and/or files: 
+[0.868s] -- Added test 'lint_cmake' to check CMake code style
+[0.870s] -- Added test 'uncrustify' to check C / C++ code style
+[0.870s] -- Configured uncrustify additional arguments: 
+[0.870s] -- Added test 'xmllint' to check XML markup files
+[0.871s] -- Configuring done (0.8s)
+[0.880s] -- Generating done (0.0s)
+[0.881s] -- Build files have been written to: /home/ashmitha/ros_ws/build/nav2_test_utils
+[0.899s] [ 50%] Built target clicked_point_to_pose
+[0.899s] [100%] Built target nav2_client_util
+[0.906s] Invoked command in '/home/ashmitha/ros_ws/build/nav2_test_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+[0.946s] Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/nav2_test_utils
+[0.973s] -- Install configuration: ""
+[0.973s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/nav2_client_util
+[0.973s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/lib/nav2_test_utils/clicked_point_to_pose
+[0.973s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/package_run_dependencies/nav2_test_utils
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/parent_prefix_path/nav2_test_utils
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/ament_prefix_path.sh
+[0.974s] -- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/ament_prefix_path.dsv
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/path.sh
+[0.974s] -- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/environment/path.dsv
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.bash
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.sh
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.zsh
+[0.974s] -- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/local_setup.dsv
+[0.974s] -- Installing: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.dsv
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/ament_index/resource_index/packages/nav2_test_utils
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/cmake/nav2_test_utilsConfig.cmake
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/cmake/nav2_test_utilsConfig-version.cmake
+[0.974s] -- Up-to-date: /home/ashmitha/ros_ws/install/nav2_test_utils/share/nav2_test_utils/package.xml
+[0.978s] Invoked command in '/home/ashmitha/ros_ws/build/nav2_test_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/nav2_test_utils

@@ -1,0 +1,64 @@
+[0.079s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[0.105s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.107s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.107s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.107s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.107s]   the cmake_policy command to set the policy and suppress this warning.
+[0.107s] 
+[0.107s] Call Stack (most recent call first):
+[0.107s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.107s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.107s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.107s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.107s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.107s]   CMakeLists.txt:22 (find_package)
+[0.108s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.108s] [0m
+[0.122s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3") 
+[0.122s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.258s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.311s] Error parsing '/home/ashmitha/ros_ws/src/msgs/package.xml':
+[0.311s] Traceback (most recent call last):
+[0.311s]   File "/home/ashmitha/anaconda3/lib/python3.11/site-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.316s]     root = dom.parseString(data)
+[0.316s]            ^^^^^^^^^^^^^^^^^^^^^
+[0.316s]   File "/home/ashmitha/anaconda3/lib/python3.11/xml/dom/minidom.py", line 2000, in parseString
+[0.319s]     return expatbuilder.parseString(string)
+[0.319s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.319s]   File "/home/ashmitha/anaconda3/lib/python3.11/xml/dom/expatbuilder.py", line 925, in parseString
+[0.320s]     return builder.parseString(string)
+[0.320s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.320s]   File "/home/ashmitha/anaconda3/lib/python3.11/xml/dom/expatbuilder.py", line 223, in parseString
+[0.321s]     parser.Parse(string, True)
+[0.321s] xml.parsers.expat.ExpatError: junk after document element: line 27, column 0
+[0.321s] 
+[0.321s] During handling of the above exception, another exception occurred:
+[0.321s] 
+[0.321s] Traceback (most recent call last):
+[0.321s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[0.321s]     main()
+[0.321s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[0.321s]     raise e
+[0.321s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[0.321s]     package = parse_package_string(
+[0.321s]               ^^^^^^^^^^^^^^^^^^^^^
+[0.321s]   File "/home/ashmitha/anaconda3/lib/python3.11/site-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.321s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.322s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/ashmitha/ros_ws/src/msgs/package.xml':
+[0.322s] The manifest contains invalid XML:
+[0.322s] junk after document element: line 27, column 0
+[0.331s] [31mCMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[0.331s]   execute_process(/home/ashmitha/anaconda3/bin/python3
+[0.331s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.332s]   /home/ashmitha/ros_ws/src/msgs/package.xml
+[0.332s]   /home/ashmitha/ros_ws/build/msgs/ament_cmake_core/package.cmake) returned
+[0.332s]   error code 1
+[0.332s] Call Stack (most recent call first):
+[0.332s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.332s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.332s]   CMakeLists.txt:35 (ament_lint_auto_find_test_dependencies)
+[0.332s] 
+[0.332s] [0m
+[0.333s] -- Configuring incomplete, errors occurred!
+[0.333s] make: *** [Makefile:719: cmake_check_build_system] Error 1
+[0.400s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '2': CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8

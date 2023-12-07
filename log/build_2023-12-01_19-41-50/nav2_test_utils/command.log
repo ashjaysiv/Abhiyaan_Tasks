@@ -1,0 +1,4 @@
+Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+Invoked command in '/home/ashmitha/ros_ws/build/nav2_test_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/nav2_test_utils -- -j8 -l8
+Invoking command in '/home/ashmitha/ros_ws/build/nav2_test_utils': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/nav2_test_utils
+Invoked command in '/home/ashmitha/ros_ws/build/nav2_test_utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --install /home/ashmitha/ros_ws/build/nav2_test_utils

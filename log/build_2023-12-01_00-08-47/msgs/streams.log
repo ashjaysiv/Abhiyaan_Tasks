@@ -1,0 +1,29 @@
+[0.078s] Invoking command in '/home/ashmitha/ros_ws/build/msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
+[0.106s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.107s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.107s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.107s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.107s]   the cmake_policy command to set the policy and suppress this warning.
+[0.107s] 
+[0.108s] Call Stack (most recent call first):
+[0.108s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.108s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.108s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.108s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.108s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.108s]   CMakeLists.txt:22 (find_package)
+[0.108s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.108s] [0m
+[0.127s] -- Found PythonInterp: /home/ashmitha/anaconda3/bin/python3 (found suitable version "3.11.4", minimum required is "3") 
+[0.128s] -- Using PYTHON_EXECUTABLE: /home/ashmitha/anaconda3/bin/python3
+[0.270s] [31mCMake Error at /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:46 (message):
+[0.270s]   ament_python_install_package() the Python package folder
+[0.270s]   '/home/ashmitha/ros_ws/src/msgs/msgs' doesn't contain an '__init__.py' file
+[0.270s] Call Stack (most recent call first):
+[0.270s]   /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:28 (_ament_cmake_python_install_package)
+[0.270s]   CMakeLists.txt:28 (ament_python_install_package)
+[0.271s] 
+[0.271s] [0m
+[0.271s] -- Configuring incomplete, errors occurred!
+[0.273s] make: *** [Makefile:719: cmake_check_build_system] Error 1
+[0.320s] Invoked command in '/home/ashmitha/ros_ws/build/msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /home/ashmitha/.local/bin/cmake --build /home/ashmitha/ros_ws/build/msgs -- -j8 -l8
